@@ -2,40 +2,40 @@
 // Component Imports
 import Counter from '../components/Counter';
 
-import { signal } from '@preact/signals';
+import {signal} from '@preact/signals';
+import Layout from "../layouts/Layout.astro";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 
 const count = signal(0);
 ---
+<Layout title='Inicio'>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
-	</head>
-	<body>
-		<main>
-			<Counter count={count} client:visible>
-				<h1>Hello, Preact 1!</h1>
-			</Counter>
+    <main>
+        <section
+                class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center"
+        >
+            <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+                <div class="mx-auto max-w-xl text-center sm:text-left">
+                    <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                        Bienvenido a la Alameda
+                    </h2>
 
-			<Counter count={count} client:visible>
-				<h1>Hello, Preact 2!</h1>
-			</Counter>
-		</main>
-	</body>
-</html>
+                    <p class="hidden text-gray-500 md:mt-4 md:block">
+                        Esta web está dedicada al municipio de Alameda de Cervera (Ciudad Real) y a sus habitantes.
+                        Aquí podrás encontrar información sobre el municipio, sus fiestas, su historia, sus
+                        tradiciones...
+                    </p>
+                </div>
+            </div>
+
+            <img
+                    alt="Violin"
+                    src="/images/puente.jpg"
+                    class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]"
+            />
+        </section>
+
+    </main>
+</Layout>
