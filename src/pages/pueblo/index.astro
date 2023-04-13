@@ -1,0 +1,18 @@
+---
+import Layout from "@layouts/Layout.astro";
+import {getCollection} from 'astro:content';
+import Place from "./place.astro";
+
+const places = await getCollection('places')
+
+---
+<Layout title='Inicio'>
+	<main>
+
+		{places.map((place) => (
+			<Place place={place} />
+		))}
+
+
+	</main>
+</Layout>

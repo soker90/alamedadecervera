@@ -3,6 +3,11 @@
   "compilerOptions": {
     // Preact specific settings
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
-  }
+    "jsxImportSource": "preact",
+		"baseUrl": ".",
+		"paths": {
+			"@components/*": ["src/components/*"],
+			"@layouts/*": ["src/layouts/*"]
+		}
+	}
 }
