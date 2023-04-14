@@ -1,5 +1,7 @@
 # Bienvenido a alamedadecervera.com 🏡
 
+[![Node.js Version](https://img.shields.io/badge/Node.js-18-green)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 [![Astro](https://img.shields.io/badge/Built%20with-Astro-0b8e4b)](https://astro.build/)
 [![Preact](https://img.shields.io/badge/Powered%20by-Preact-673ab8)](https://preactjs.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-38b2ac)](https://tailwindcss.com/)
