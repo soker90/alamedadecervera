@@ -1,38 +1,38 @@
 ---
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 const {
-    title,
-    description = 'Web dedicada a la pedanía de Alameda de Cervera'
-} = Astro.props
+	title,
+	description = "Web dedicada a la pedanía de Alameda de Cervera",
+} = Astro.props;
 
-const seoTitle = title
-    ? `${title} | Alameda de Cervera`
-    : 'Alameda de Cervera'
+const seoTitle = title ? `${title} | Alameda de Cervera` : "Alameda de Cervera";
 ---
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-    <title>{seoTitle}</title>
-    <link rel="canonical" href={Astro.url.href}/>
-    <meta name="description" content={description}/>
-    <meta property="og:title" content={seoTitle}/>
-    <meta property="og:description" content={description}/>
-    <meta property="og:image"
-          content="https://ruideratreasures.es/wp-content/uploads/2021/02/puente-alameda-cervera-945x709.jpg"/>
-    <meta property="og:url" content={Astro.url.href}/>
-    <meta property="og:locale" content="es_ES"/>
-    <meta property="og:type" content="website"/>
-    <meta name="generator" content={Astro.generator}/>
-</head>
-<body class="min-h-screen overflow-x-hidden">
-<Header/>
-<slot/>
-<Footer/>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{seoTitle}</title>
+		<link rel="canonical" href={Astro.url.href} />
+		<meta name="description" content={description} />
+		<meta property="og:title" content={seoTitle} />
+		<meta property="og:description" content={description} />
+		<meta
+			property="og:image"
+			content="https://ruideratreasures.es/wp-content/uploads/2021/02/puente-alameda-cervera-945x709.jpg"
+		/>
+		<meta property="og:url" content={Astro.url.href} />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:type" content="website" />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body class="flex flex-col min-h-screen overflow-x-hidden">
+		<Header />
+		<slot />
+		<Footer />
+	</body>
 </html>

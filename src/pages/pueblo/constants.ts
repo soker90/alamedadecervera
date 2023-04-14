@@ -30,14 +30,14 @@ export const PLACES = [
 					'personas que trabajan en la finca, en la parte de abajo también hay un patio trasero o corral, donde estaban las ' +
 					'cuadras de los animales y los porches donde guardaban los carros.'
 			},
-			{
-				title: 'Estación de Marañon',
-				image: '/images/maranon.jpg',
-				map: 'https://goo.gl/maps/xyFF95EtQHJwX3vs7',
-				body: 'Actualmente cerrada, se sitúa a 8,3 km entre las estaciones de Alcázar de San Juan y Cinco Casas. La ' +
-					'estación se abrió al tráfico el 15 de Junio de 1860, en 1941 la instalación pasó a manos de Renfe, y 1960 ' +
-					'llegó la electrificación a la estación. Desde 2005 Adif es titular de las instalaciones.'
-			},
+			// {
+			// 	title: 'Estación de Marañon',
+			// 	image: '/images/maranon.jpg',
+			// 	map: 'https://goo.gl/maps/xyFF95EtQHJwX3vs7',
+			// 	body: 'Actualmente cerrada, se sitúa a 8,3 km entre las estaciones de Alcázar de San Juan y Cinco Casas. La ' +
+			// 		'estación se abrió al tráfico el 15 de Junio de 1860, en 1941 la instalación pasó a manos de Renfe, y 1960 ' +
+			// 		'llegó la electrificación a la estación. Desde 2005 Adif es titular de las instalaciones.'
+			// },
 			{
 				title: 'Casas de los Vela',
 				map: 'https://goo.gl/maps/HLi8vgsukW9etKMy6',
@@ -54,7 +54,7 @@ export const PLACES = [
 				map: 'https://goo.gl/maps/TqhojU7CVaypS3jj8',
 				web: null,
 				body: 'Es el parque más grande, ubicado a la entrada de la localidad. En su entrada se ' +
-					'encuentra el puente del Gran Prior y dentro de él está la piscina municipal y su terraza. Dispone de un área ' +
+					'encuentra el puente del Gran Prior y dentro del parque, la piscina municipal y su terraza. Dispone de un área ' +
 					'de juegos infantiles con diversos columpios y toboganes.'
 			},
 			{
