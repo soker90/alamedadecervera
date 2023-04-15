@@ -15,7 +15,9 @@ const seoTitle = title ? `${title} | Alameda de Cervera` : "Alameda de Cervera";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<title>{seoTitle}</title>
 		<link rel="canonical" href={Astro.url.href} />
 		<meta name="description" content={description} />
