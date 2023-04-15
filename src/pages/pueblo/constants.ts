@@ -87,7 +87,7 @@ export const PLACES = [
 			}, {
 				title: 'Consultorio Médico Local',
 				image: '/images/consultorio.jpg',
-				map: 'https://goo.gl/maps/vpz9ZPW6TDoZhtoh7',
+				map: 'https://goo.gl/maps/bRL1BRY6APQqwoj47',
 				body: 'Centro médico de atención primaria.'
 			}
 		]

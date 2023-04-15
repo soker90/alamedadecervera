@@ -2,12 +2,13 @@ export const SECTIONS = [
 	{
 		title: 'Historia',
 		href: '/historia',
-		description: 'Conoce nuestra historia'
+		description:
+			'Conoce algunos acontecimientos históricos que ocurrieron aquí'
 	},
 	{
 		title: 'Pueblo',
 		href: '/pueblo',
-		description: 'Descubre los rincones de nuestro pueblo'
+		description: 'Descubre que puedes visitar y que servicios ofrece el pueblo'
 	},
 	{
 		title: 'San Lorenzo',
@@ -28,10 +29,14 @@ export const SECTIONS = [
 	{
 		title: 'Alojamiento',
 		href: '/alojamiento',
-		description: '¿Quieres visitarnos? Aquí puedes quedarte'
+		description: '¿Quieres visitarnos? Echa un vistazo a donde puedes alojarte'
 	},
 	// {title: 'En venta', href: '/en-venta', description: 'Casas, chalets y terrenos en venta'},
-	{ title: 'Contacto', href: '/contacto', description: '' }
+	{
+		title: 'Contacto',
+		href: '/contacto',
+		description: '¿Quieres ver dónde estamos? ¿O cómo puedes contactarme?'
+	}
 ]
 
 export const MENU = [{ title: 'Inicio', href: '/' }, ...SECTIONS]
