@@ -30,13 +30,13 @@ export const SECTIONS = [
 		title: 'Alojamiento',
 		href: '/alojamiento',
 		description: '¿Quieres visitarnos? Echa un vistazo a donde puedes alojarte'
-	},
-	// {title: 'En venta', href: '/en-venta', description: 'Casas, chalets y terrenos en venta'},
-	{
-		title: 'Contacto',
-		href: '/contacto',
-		description: '¿Quieres ver dónde estamos? ¿O cómo puedes contactarme?'
 	}
+	// {title: 'En venta', href: '/en-venta', description: 'Casas, chalets y terrenos en venta'},
+	// {
+	// 	title: 'Contacto',
+	// 	href: '/contacto',
+	// 	description: '¿Quieres ver dónde estamos? ¿O cómo puedes contactarme?'
+	// }
 ]
 
 export const MENU = [{ title: 'Inicio', href: '/' }, ...SECTIONS]
