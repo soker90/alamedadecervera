@@ -1,6 +1,16 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import MapsIcon from "../components/MapsIcon.astro";
+import Geocaching from "../components/Geocaching.astro";
+
+const GEOCACHES = [{title: "Alameda de Cervera", url: "https://coord.info/GC6YN06"}, {
+	title: "Canal del Guadiana",
+	url: "https://coord.info/GC7C9NN"
+}];
+
+const RUTES = [{
+	title: "Alameda de Cervera - Villarta de San Juan",
+	url: "https://es.wikiloc.com/rutas-senderismo/etapa-4-alameda-de-cervera-villarta-de-san-juan-17811860"
+}];
 ---
 
 <Layout title="Actividades">
@@ -33,18 +43,8 @@ import MapsIcon from "../components/MapsIcon.astro";
 					</div>
 				</div>
 				<div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-					<div class="p-2 sm:w-1/2 w-full">
-						<div class="bg-gray-100 rounded flex p-4 h-full items-center">
-							<MapsIcon class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" />
-							<span class="title-font font-medium">Alameda de Cervera</span>
-						</div>
-					</div>
-					<div class="p-2 sm:w-1/2 w-full">
-						<div class="bg-gray-100 rounded flex p-4 h-full items-center">
-							<MapsIcon class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" />
-							<span class="title-font font-medium">Canal del Guadiana</span>
-						</div>
-					</div>
+					{GEOCACHES.map(geocache =>
+						<Geocaching cache={geocache}/>)}
 				</div>
 				<a
 					href="https://www.geocaching.com/play/mobile"
@@ -82,6 +82,31 @@ import MapsIcon from "../components/MapsIcon.astro";
 						Descargar APP
 					</button>
 				</a>
+			</div>
+		</section>
+
+		<section class="text-gray-600 body-font">
+			<div class="container px-5 py-24 mx-auto">
+				<div class="text-center mb-20">
+					<h1
+						class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
+					>
+						Senderismo
+					</h1>
+					<div
+						class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-left space-y-4"
+					>
+						<p>
+							Por Alameda de Cervera hay varías rutas señalizadas, a continuación indicacamos algunas de ellas.
+						</p>
+
+					</div>
+				</div>
+				<div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+					{RUTES.map(geocache =>
+						<Geocaching cache={geocache}/>)}
+				</div>
+
 			</div>
 		</section>
 	</main>
