@@ -12,7 +12,7 @@ export const PLACES = [
 					'de caracol'
 			},
 			{
-				title: 'Puente del Vado Lancero',
+				title: 'Puente del Vado Lancero (Puente del Balancero)',
 				image: '/images/puente-vado-lancero.jpg',
 				maps: [ 'https://goo.gl/maps/V3djyGQDaGuzckzV7'],
 				body: 'Construido entre 1797 y 1799,  se encuentra en dirección a Alcázar de San Juan, en las cercanías de los antiguos ' +
