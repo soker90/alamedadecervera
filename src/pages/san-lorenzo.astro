@@ -2,17 +2,51 @@
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout title="Historia">
-	<main class="m-20">
-		<div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4 mb-10" role="alert">
-			<p class="font-bold">En construcción</p>
-			<p>Actualmente esta página se encuentra en construcción</p>
-		</div>
-		<p>Las primeras refrencias sobre la ermita de San Lorenzo,
-			la encontramos en el año 1734, principalmente porque la
-			ermita requería renovar los ornamentos que tenía, ya que
-			disponía de algunos que eran pertenecientes al Convento
-			de San Francisco de Alcázar de San Juan.</p>
+	<main class="text-gray-600 body-font m-auto w-full">
+		<section class="container px-5 py-24 mx-auto">
+			<div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4 mb-10" role="alert">
+				<p class="font-bold">En construcción</p>
+				<p>Actualmente esta página se encuentra en construcción</p>
+			</div>
+			<section/>
 
+			<!-- <p>Las primeras refrencias sobre la ermita de San Lorenzo,
+				la encontramos en el año 1734, principalmente porque la
+				ermita requería renovar los ornamentos que tenía, ya que
+				disponía de algunos que eran pertenecientes al Convento
+				de San Francisco de Alcázar de San Juan.</p>
+	-->
+			<section class="text-gray-600 body-font">
+				<div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+					<img class="mb-10 object-cover object-center rounded" alt="san-lorenzo"
+							 src="/images/san-lorenzo.jpg">
+					<div class="text-center lg:w-2/3 w-full">
+						<p class="mb-8 leading-relaxed">Imagen de San Lorenzo</p>
+					</div>
+				</div>
+
+			</section>
+
+			<p>La imagen de San Lorenzo que se encontraba originalmente en la ermita de Villacentenos desapareció durante la
+				Guerra Civil. En su lugar, se colocó una pequeña talla de San Lorenzo de aproximadamente 80 centímetros de
+				altura, hecha de madera. No se tiene registro de su procedencia exacta, solo se sabe que fue venerada en la
+				iglesia parroquial hasta que se adquirió una segunda talla de mayor tamaño alrededor de 1957-1958.</p>
+			<section class="text-gray-600 body-font flex">
+				<div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+					<img class="mb-10 object-cover object-center rounded" alt="san-lorenzo"
+							 src="/images/san-lornezo-antigua.jpg">
+					<div class="text-center lg:w-2/3 w-full">
+						<p class="mb-8 leading-relaxed">Imagen de San Lorenzo</p>
+					</div>
+				</div>
+				<div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+					<img class="mb-10 object-cover object-center rounded" alt="procesion"
+							 src="/images/san-lorenzo-antigua-procesion.jpg">
+					<div class="text-center lg:w-2/3 w-full">
+						<p class="mb-8 leading-relaxed">Procesión años 40</p>
+					</div>
+				</div>
+			</section>
 
 	</main>
 </Layout>
