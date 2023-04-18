@@ -1,17 +1,6 @@
 ---
-import {signal} from '@preact/signals';
 import Layout from "@layouts/Layout.astro";
 import {SECTIONS} from "../config";
-
-
-const count = signal(0);
-
-/*
-
- agenda
- noticias
- Ver proximos autobuses, blablacar etch
- */
 ---
 <Layout title='Inicio'>
 	<main>
@@ -20,11 +9,16 @@ const count = signal(0);
 		>
 			<div class="p-8 md:p-12 lg:px-16 lg:py-24">
 				<div class="mx-auto max-w-xl text-center sm:text-left">
-					<h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+					<img
+						alt="logo"
+						src="/icon.svg"
+						class="h-48 w-48 hidden sm:block sm:mx-auto sm:mb-8 sm:mt-4 xl:mx-auto"
+					/>
+					<h2 class="text-2xl font-bold text-gray-900 md:text-3xl text-center">
 						Bienvenido a la Alameda
 					</h2>
 
-					<p class="hidden text-gray-500 md:mt-4 md:block">
+					<p class="hidden text-gray-500 md:mt-4 md:block text-center">
 						Esta web está dedicada al municipio de Alameda de Cervera (Ciudad Real) y a sus habitantes.
 						Aquí podrás encontrar información sobre el municipio, sus fiestas, su historia, sus
 						tradiciones...
@@ -33,7 +27,7 @@ const count = signal(0);
 			</div>
 
 			<img
-				alt="Violin"
+				alt="puente"
 				src="/images/puente.jpg"
 				class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]"
 			/>
