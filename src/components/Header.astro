@@ -1,14 +1,29 @@
 ---
 import {MENU} from "../config";
-import Logo from "./Logo.astro";
 ---
 <header class="text-white body-font bg-primary">
-	<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-		<a class="flex title-font font-medium items-center mb-4 md:mb-0">
+	<div class="container mx-auto flex flex-wrap p-5 items-center">
+		<button type="button" class="p-2 lg:hidden">
+			<svg
+				class="h-6 w-6"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M4 6h16M4 12h16M4 18h16"
+				/>
+			</svg>
+		</button>
+		<a class="flex title-font font-medium items-center mb-0 m-auto lg:ml-0">
 			<img src="/icon.svg" alt="" class="w-10 h-10"/>
 			<span class="ml-3 text-xl">Alameda de Cervera</span>
 		</a>
-		<nav class="md:ml-auto flex flex-wrap items-center justify-center">
+		<nav class="md:ml-auto flex-wrap items-center justify-center hidden lg:block">
 			{
 				MENU.map(({title, href}) => <a class="mr-5 hover:text-gray-200" href={href}>{title}</a>)
 			}
