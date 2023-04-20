@@ -1,44 +1,36 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import SendMailIcon from "@components/SendMailIcon.astro";
-import FontBold from "@components/FontBold.astro";
+import Layout from '@layouts/Layout.astro'
+import SendMailIcon from '@components/SendMailIcon.astro'
+import FontBold from '@components/FontBold.astro'
 
 const mailto =
-	"mailto:info@alamedadecervera.com?subject=Solicitud de agregación de comercio&body=Hola, me gustaría aparecer en el apartado de comercios. Adjunto la información que me gustaría que apareciera en la web:";
+	'mailto:info@alamedadecervera.com?subject=Solicitud de agregación de comercio&body=Hola, me gustaría aparecer en el apartado de comercios. Adjunto la información que me gustaría que apareciera en la web:'
 ---
 
-<Layout title="Alojamiento">
-	<main class="m-auto">
-		<section class="bg-white">
-			<div
-				class="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row"
-			>
-				<div class="flex justify-center xl:w-1/2">
+<Layout title='Alojamiento'>
+	<main class='m-auto'>
+		<section class='bg-white'>
+			<div class='container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row'>
+				<div class='flex justify-center xl:w-1/2'>
 					<img
-						class="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
-						src="/images/resources/comercios.jpg"
-						alt=""
+						class='h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full'
+						src='/images/resources/comercios.jpg'
+						alt=''
 					/>
 				</div>
 
-				<div
-					class="flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0"
-				>
-					<h2
-						class="text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl"
-					>
+				<div class='flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0'>
+					<h2 class='text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl'>
 						¿Quieres aparecer aquí gratuitamente?
 					</h2>
 
-					<p class="block max-w-2xl mt-4 text-primary font-semibold">
-						Si tienes un comercio en Alameda de Cervera o das algún servicio a
-						esta, puedo añadirte.
+					<p class='block max-w-2xl mt-4 text-primary font-semibold'>
+						Si tienes un comercio en Alameda de Cervera o das algún servicio a esta, puedo añadirte.
 					</p>
-					<p class="block max-w-2xl mt-4 text-gray-500">
+					<p class='block max-w-2xl mt-4 text-gray-500'>
 						Envíame una
 						<FontBold>descripción</FontBold>
-						de tu negocio, con la información que quieras que aparezca en la web,
-						una o varias
+						de tu negocio, con la información que quieras que aparezca en la web, una o varias
 						<FontBold>imágenes</FontBold>
 						(indicando la principal), una
 						<FontBold>web</FontBold>
@@ -47,19 +39,19 @@ const mailto =
 						de contacto y la
 						<FontBold>ubicación</FontBold>
 						en google maps. Correo:
-						<FontBold className="text-secondary">
+						<FontBold className='text-secondary'>
 							<a href={mailto}>info@alamedadecervera.com</a>
 						</FontBold>
 					</p>
 
-					<div class="mt-6 sm:-mx-2">
+					<div class='mt-6 sm:-mx-2'>
 						<a
 							href={mailto}
-							class="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 mt-4 overflow-hidden text-white transition-colors duration-300 bg-primary rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+							class='inline-flex items-center justify-center w-full px-4 text-sm py-2.5 mt-4 overflow-hidden text-white transition-colors duration-300 bg-primary rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80'
 						>
-							<SendMailIcon class="w-5 h-5 mr-2" />
+							<SendMailIcon class='w-5 h-5 mr-2' />
 
-							<span class="mx-2">Contáctame</span>
+							<span class='mx-2'>Contáctame</span>
 						</a>
 					</div>
 				</div>
