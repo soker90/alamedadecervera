@@ -1,0 +1,116 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Geocaching from "../components/Geocaching.astro";
+
+const GEOCACHES = [{title: "Alameda de Cervera", url: "https://coord.info/GC6YN06"}, {
+	title: "Canal del Guadiana",
+	url: "https://coord.info/GC7C9NN"
+}];
+
+const RUTES = [{
+	title: "Alameda de Cervera - Villarta de San Juan",
+	url: "https://es.wikiloc.com/rutas-senderismo/etapa-4-alameda-de-cervera-villarta-de-san-juan-17811860"
+}, {
+	title: "Alameda de Cervera - Argamasilla de Alba",
+	url: "https://es.wikiloc.com/rutas-senderismo/etapa-3-argamasilla-de-alba-alameda-de-cervera-17811820"
+}];
+---
+
+<Layout title="Actividades">
+	<main class="m-auto">
+		<section class="text-gray-600 body-font">
+			<div class="container px-5 py-24 mx-auto">
+				<div class="text-center mb-20">
+					<h1
+						class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
+					>
+						Geocaching
+					</h1>
+					<div
+						class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-left space-y-4"
+					>
+						<p>
+							El Geocaching es una emocionante actividad basada en encontrar
+							"tesoros" escondidos por otros usuarios, utilizando coordenadas de
+							GPS. Los tesoros suelen estar escondidos en lugares especiales y
+							alejados de nuestra zona habitual, lo que hace que sea una
+							actividad de exploración pura y dura.
+						</p>
+
+						<p>
+							Es una divertida y saludable forma de descubrir nuevos lugares y
+							recorrer ciudades de manera diferente. Además, se puede
+							interactuar con otros jugadores a través de aplicaciones oficiales
+							y no oficiales disponibles en iOS y Android.
+						</p>
+					</div>
+				</div>
+				<div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+					{GEOCACHES.map(geocache =>
+						<Geocaching cache={geocache}/>)}
+				</div>
+				<a
+					href="https://www.geocaching.com/play/mobile"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<button
+						class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="mr-4"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path
+								d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+							></path>
+							<path
+								d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+							></path>
+							<path
+								d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+							></path>
+							<path d="M14 7l6 0"></path>
+							<path d="M17 4l0 6"></path>
+						</svg>
+						Descargar APP
+					</button>
+				</a>
+			</div>
+		</section>
+
+		<section class="text-gray-600 body-font">
+			<div class="container px-5 py-24 mx-auto">
+				<div class="text-center mb-20">
+					<h1
+						class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
+					>
+						Senderismo
+					</h1>
+					<div
+						class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-left space-y-4"
+					>
+						<p>
+							Por Alameda de Cervera hay varías rutas señalizadas, entre ellas, dos que siguen el cauce del Guadiana.
+						</p>
+
+					</div>
+				</div>
+				<div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+					{RUTES.map(geocache =>
+						<Geocaching cache={geocache}/>)}
+				</div>
+
+			</div>
+		</section>
+	</main>
+</Layout>

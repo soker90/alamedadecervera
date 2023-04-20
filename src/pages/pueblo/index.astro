@@ -1,0 +1,21 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Place from "@components/Place.astro";
+import { PLACES } from "./constants";
+---
+<Layout title="Inicio">
+	<main class="mt-20">
+
+		{PLACES.map(({ category, places }) =>
+			<>
+				<h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4 text-center">{category}</h1>
+				<div class="flex mt-6 justify-center">
+					<div class="w-64 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+				</div>
+				{places.map(place =>
+					<Place place={place} />)}
+			</>
+		)}
+
+	</main>
+</Layout>

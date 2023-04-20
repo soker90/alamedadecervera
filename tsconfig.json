@@ -1,0 +1,14 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    // Preact specific settings
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+		"baseUrl": ".",
+		"paths": {
+			"@components/*": ["src/components/*"],
+			"@layouts/*": ["src/layouts/*"]
+		},
+		"strictNullChecks": true
+	}
+}
