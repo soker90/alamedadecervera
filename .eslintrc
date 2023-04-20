@@ -32,7 +32,8 @@
 		"indent": ["warn", "tab"],
 		"quotes": ["warn", "single"],
 		"jsx-quotes": ["warn", "prefer-single"],
-		"eol-last": "off"
+		"eol-last": "off",
+		"@typescript-eslint/triple-slash-reference": "off"
 	},
 	"overrides": [
 		{
