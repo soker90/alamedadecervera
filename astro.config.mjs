@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://www.alamedadecervera.com',
+	site: 'https://alamedadecervera.com',
 	// Enable Preact to support Preact JSX components.
 	integrations: [preact(), tailwind(), mdx(), sitemap()]
 })
