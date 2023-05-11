@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.alamedadecervera.com/sitemap-index.xml
+Sitemap: https://alamedadecervera.com/sitemap-index.xml
