@@ -13,12 +13,6 @@ export const SECTIONS = [
 		logo: '/icons/village.svg'
 	},
 	{
-		title: 'San Lorenzo',
-		href: '/san-lorenzo',
-		description: 'Toda la información sobre la hermandad de San Lorenzo',
-		logo: '/icons/san-lorenzo.svg'
-	},
-	{
 		title: 'Actividades',
 		href: '/actividades',
 		description:

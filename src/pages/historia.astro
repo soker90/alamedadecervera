@@ -1,38 +1,95 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro'
 ---
 <Layout title="Historia">
-	<section class="container px-5 py-12 mx-auto lg:w-4/5">
-		<div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4 mb-10" role="alert">
-			<p class="font-bold">En construcción</p>
-			<p>Actualmente esta página se encuentra en construcción</p>
+	<main class="container text-gray-600 body-font mt-20 m-auto w-5/6 lg:w-3/5 mb-24">
+
+		<section class="grid gap-4">
+			<p>
+				Alameda de Cervera es una localidad con una historia rica y profunda relacionada con la Orden Militar de San
+				Juan y la Corona. Su nombre "Alameda" hace referencia a los álamos negros y blancos que rodeaban el casco
+				urbano
+				de la aldea. Sin embargo, el origen del nombre "Cervera" o "Zerbera" no está claro.
+			</p>
+
+			<p>
+				La localidad cuenta con varios elementos que han caracterizado su constitución a lo largo de la historia,
+				como
+				su Castillo y Dehesa de estilo medieval, su Alameda que fue ampliada en el siglo XVIII por el arquitecto D.
+				Juan
+				de Villanueva, y sus molinos de pólvora que fueron uno de los pilares económicos en los siglos XVII y XVIII.
+				Con
+				el traslado de los molinos a Ruidera debido a la construcción del Canal del Gran Prior en el siglo XVIII, se
+				intentó adaptar los antiguos molinos en batanes y establecer una fábrica de seda en el Castillo.
+			</p>
+
+		</section>
+
+		<h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mt-10 mb-2 text-center">San Lorenzo</h2>
+		<div class="flex mt-6 justify-center mb-10">
+			<div class="w-64 h-1 rounded-full bg-indigo-500 inline-flex"></div>
 		</div>
-	</section>
 
-	<main class="text-gray-600 body-font m-auto lg:w-3/4">
+		<section class="grid gap-4">
+			<p>
+				Por el año 1800, Villacentenos era una aldea pequeña con 75 habitantes que se dedicaban a la agricultura y la
+				ganadería. Era la finca más grande en el término de Alcázar y estaba rodeada por el río Guadiana, el término
+				de
+				Manzanares y el término de Villarta de San Juan.</p>
 
-		<div class="container px-5 pb-24 mx-auto">
-			<div class="sm:items-center items-start mx-auto grid gap-4 font-medium sm:pr-16">
-				<p>
-					Alameda de Cervera es una localidad con una historia rica y profunda relacionada con la Orden Militar de San
-					Juan y la Corona. Su nombre "Alameda" hace referencia a los álamos negros y blancos que rodeaban el casco
-					urbano
-					de la aldea. Sin embargo, el origen del nombre "Cervera" o "Zerbera" no está claro.
-				</p>
 
-				<p>
-					La localidad cuenta con varios elementos que han caracterizado su constitución a lo largo de la historia,
-					como
-					su Castillo y Dehesa de estilo medieval, su Alameda que fue ampliada en el siglo XVIII por el arquitecto D.
-					Juan
-					de Villanueva, y sus molinos de pólvora que fueron uno de los pilares económicos en los siglos XVII y XVIII.
-					Con
-					el traslado de los molinos a Ruidera debido a la construcción del Canal del Gran Prior en el siglo XVIII, se
-					intentó adaptar los antiguos molinos en batanes y establecer una fábrica de seda en el Castillo.
-				</p>
+			<p>En el año 1811, los franceses pasaron por Villacentenos y encontraron en una iglesia, reconvertida en
+				convento,
+				a una comunidad religiosa. Los franceses trataron mal a las monjas, quienes decidieron huir y refugiarse en la
+				Colonia de Alameda de Cervera. Antes de irse, tomaron la imagen de San Lorenzo, que para ellas tenía mucho
+				valor
+				porque les había salvado de las tropas francesas.</p>
 
-			</div>
-		</div>
+			<p>
+				Las monjas vivieron con los colonos por un tiempo hasta que se fueron y dejaron la imagen de San Lorenzo en
+				una
+				pequeña ermita que se convirtió en la iglesia de San Lorenzo, el patrón de la Alameda.</p>
+
+			<p>Durante la guerra de la Independencia, las monjas vivieron con los colonos como si fueran parte de la
+				familia,
+				hasta que finalmente se marcharon a Herencia. Ya que cuando volvieron a Villacentenos,
+				encontraron que todo había sido quemado por las tropas francesas.</p>
+
+		</section>
+		<section class="text-gray-600 body-font">
+			<figure class="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
+				<img class="mb-10 object-cover object-center rounded" alt="san-lorenzo"
+						 src="/images/san-lorenzo.jpg">
+				<figcaption class="text-center lg:w-2/3 w-full">
+					<p class="mb-8 leading-relaxed">Imagen de San Lorenzo</p>
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<p>La imagen de San Lorenzo que se encontraba originalmente en la ermita de Villacentenos
+			desapareció durante la
+			Guerra Civil. En su lugar, se colocó una pequeña talla de San Lorenzo de aproximadamente 80 centímetros de
+			altura, hecha de madera. No se tiene registro de su procedencia exacta, solo se sabe que fue venerada en la
+			iglesia parroquial hasta que se adquirió una segunda talla de mayor tamaño alrededor de 1957-1958.</p>
+
+		<section class="text-gray-600 body-font flex flex-col md:flex-row">
+			<figure class="container mx-auto flex px-5 pt-24 md:pt-24 items-center justify-center flex-col">
+				<img class="mb-10 object-cover object-center rounded" alt="san-lorenzo"
+						 src="/images/san-lornezo-antigua.jpg">
+				<figcaption class="text-center lg:w-2/3 w-full">
+					<p class="mb-8 leading-relaxed">Imagen de San Lorenzo</p>
+				</figcaption>
+			</figure>
+			<figure class="container mx-auto flex px-5 pt-12 md:pt-24 items-center justify-center flex-col">
+				<img class="mb-10 object-cover object-center rounded" alt="procesion"
+						 src="/images/san-lorenzo-antigua-procesion.jpg">
+				<figcaption class="text-center lg:w-2/3 w-full">
+					<p class="mb-8 leading-relaxed">Procesión años 40</p>
+				</figcaption>
+			</figure>
+		</section>
 
 	</main>
+
 </Layout>
