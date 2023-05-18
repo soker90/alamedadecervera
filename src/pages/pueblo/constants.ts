@@ -4,7 +4,7 @@ export const PLACES = [
 		places: [
 			{
 				title: 'Puente del Gran Prior',
-				image: '/images/puente.jpg',
+				image: '/images/puente.webp',
 				maps: [ 'https://goo.gl/maps/o7t4ZY5oV1JrhXHo9'],
 				body: 'Fue mandado construir por Juan de Villanueva sobre un antiguo canal a finales de 1797 y concluye a finales de 1799.\n' +
 					'Posee un haz de 3,40 metros, y una altura sobre el lecho de 3,20 metros. Lo más singular de este puente, son las\n' +
@@ -13,7 +13,7 @@ export const PLACES = [
 			},
 			{
 				title: 'Puente del Vado Lancero (Puente del Balancero)',
-				image: '/images/puente-vado-lancero.jpg',
+				image: '/images/puente-vado-lancero.webp',
 				maps: [ 'https://goo.gl/maps/V3djyGQDaGuzckzV7'],
 				body: 'Construido entre 1797 y 1799,  se encuentra en dirección a Alcázar de San Juan, en las cercanías de los antiguos ' +
 					'molinos de pólvora del rey. Está compuesto por dos arcos de medio punto de piedra caliza, enmarcados por estribos ' +
@@ -22,7 +22,7 @@ export const PLACES = [
 			},
 			{
 				title: 'Castillo de Cervera (Casa grande)',
-				image: '/images/casa-grande.jpg',
+				image: '/images/casa-grande.webp',
 				maps: [ 'https://goo.gl/maps/t1iNuAtthwRDSQ1v6'],
 				body: 'Esta casa manchega de labranza consta de un patio delantero principal, donde está situado un palomar al estilo ' +
 					'de una almena de castillo de donde recibe la casa el nombre de Castillo de Cervera.<br/><br/> La vivienda principal ' +
@@ -32,7 +32,7 @@ export const PLACES = [
 			},
 			// {
 			// 	title: 'Estación de Marañon',
-			// 	image: '/images/maranon.jpg',
+			// 	image: '/images/maranon.webp',
 			// 	maps: [ 'https://goo.gl/maps/xyFF95EtQHJwX3vs7'],
 			// 	body: 'Actualmente cerrada, se sitúa a 8,3 km entre las estaciones de Alcázar de San Juan y Cinco Casas. La ' +
 			// 		'estación se abrió al tráfico el 15 de Junio de 1860, en 1941 la instalación pasó a manos de Renfe, y 1960 ' +
@@ -40,7 +40,7 @@ export const PLACES = [
 			// },
 			{
 				title: 'Bombos manchegos',
-				image: '/images/bombo.jpg',
+				image: '/images/bombo.webp',
 				maps: ['https://goo.gl/maps/tdUNFWYxPF1MVXZk7', 'https://goo.gl/maps/hsnc56RKPqBXoAcR7', 'https://goo.gl/maps/Q4VzuQTcfvgTKu1SA'],
 				body: 'Son unas construcciones rural tradicionales de esta zona de La Mancha, utilizada como refugio para ' +
 					'pastores y labradores durante las faenas agrícolas y pastoriles. Es una estructura circular o elíptica, ' +
@@ -55,7 +55,7 @@ export const PLACES = [
 		places: [
 			{
 				title: 'Parque de D. Ramón Fernández Urrutia',
-				image: '/images/parque.jpg',
+				image: '/images/parque.webp',
 				maps: [ 'https://goo.gl/maps/TqhojU7CVaypS3jj8'],
 				web: null,
 				body: 'Es el parque más grande, ubicado a la entrada de la localidad. En su entrada se ' +
@@ -75,7 +75,7 @@ export const PLACES = [
 		places: [
 			{
 				title: 'C.E.I.P. Juan de Villanueva (C.R.A. Alciares)',
-				image: '/images/colegio.jpg',
+				image: '/images/colegio.webp',
 				maps: [ 'https://goo.gl/maps/A3aZWG8oYDNvyTwH9'],
 				web: 'https://craalciares.blogspot.com',
 				body: 'El colegio de la localidad, ubicado en el centro del pueblo. Forma parte de Colegio Rural Agrupado Alciares, ' +
@@ -83,7 +83,7 @@ export const PLACES = [
 					'ubicado detrás del colegio junto al parque D. Juan de Villanueva.'
 			}, {
 				title: 'Parada de autobuses',
-				image: '/images/parada-bus.jpg',
+				image: '/images/parada-bus.webp',
 				maps: [ 'https://goo.gl/maps/vpz9ZPW6TDoZhtoh7'],
 				web: 'https://www.interbus.es',
 				body: 'Dispone de autobuses diarios a Alcázar de San Juan y Tomelloso.<br/> Horarios (se recomienda consultar en' +
@@ -91,7 +91,7 @@ export const PLACES = [
 					' - Alameda: L-D 14:10<br/> Alameda - Tomelloso: L-V 12:15, S-D 12:30'
 			}, {
 				title: 'Consultorio Médico Local',
-				image: '/images/consultorio.jpg',
+				image: '/images/consultorio.webp',
 				maps: [ 'https://goo.gl/maps/bRL1BRY6APQqwoj47'],
 				body: 'Centro médico de atención primaria.'
 			}
