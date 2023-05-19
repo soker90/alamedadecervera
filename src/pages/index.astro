@@ -1,6 +1,9 @@
 ---
+import { Image } from '@astrojs/image/components';
 import Layout from "@layouts/Layout.astro";
 import {SECTIONS} from "../config";
+
+import PuenteImage from '@assets/images/puente.webp';
 ---
 <Layout title='Inicio'>
 	<main>
@@ -26,9 +29,9 @@ import {SECTIONS} from "../config";
 				</div>
 			</div>
 
-			<img
+			<Image
 				alt="puente"
-				src="/images/puente.webp"
+				src={PuenteImage}
 				class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]"
 			/>
 		</section>
