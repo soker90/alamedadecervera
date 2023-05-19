@@ -11,6 +11,7 @@ export default defineConfig({
 	site: 'https://alamedadecervera.com',
 	// Enable Preact to support Preact JSX components.
 	integrations: [preact(), tailwind(), mdx(), sitemap(), image({
-		serviceEntryPoint: '@astrojs/image/sharp'
+		// Sharp is not supported for my computer
+		...(import.meta.env.MODE !== 'development' && { serviceEntryPoint: '@astrojs/image/sharp' })
 	})]
 })

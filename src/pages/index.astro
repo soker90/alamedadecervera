@@ -3,7 +3,6 @@ import { Image } from '@astrojs/image/components';
 import Layout from "@layouts/Layout.astro";
 import {SECTIONS} from "../config";
 
-import PuenteImage from '@assets/images/puente.webp';
 ---
 <Layout title='Inicio'>
 	<main>
@@ -31,7 +30,7 @@ import PuenteImage from '@assets/images/puente.webp';
 
 			<Image
 				alt="puente"
-				src={PuenteImage}
+				src={import('@assets/images/puente.webp')}
 				class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]"
 			/>
 		</section>
@@ -80,25 +79,25 @@ import PuenteImage from '@assets/images/puente.webp';
 				<div class="flex flex-wrap md:-m-2 -m-1">
 					<div class="flex flex-wrap w-1/2">
 						<div class="md:p-2 p-1 w-1/2">
-							<img alt="gallery" class="w-full object-cover h-full object-center block"
-									 src="/images/ermita-san-lorenzo.webp" loading="lazy">
+							<Image alt="gallery1" class="w-full object-cover h-full object-center block"
+									 src={import("@assets/images/ermita-san-lorenzo.webp")} loading="lazy">
 						</div>
 						<div class="md:p-2 p-1 w-1/2">
-							<img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/parque.webp" loading="lazy">
+							<Image alt="gallery2" class="w-full object-cover h-full object-center block" src={import("@assets/images/parque.webp")} loading="lazy">
 						</div>
 						<div class="md:p-2 p-1 w-full">
-							<img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/casa-grande.webp" loading="lazy">
+							<Image alt="gallery3" class="w-full h-full object-cover object-center block" src={import("@assets/images/casa-grande.webp")} loading="lazy">
 						</div>
 					</div>
 					<div class="flex flex-wrap w-1/2">
 						<div class="md:p-2 p-1 w-full">
-							<img alt="gallery" class="w-full h-full object-cover object-center block" src="/images/colegio.webp" loading="lazy">
+							<Image alt="gallery" class="w-full h-full object-cover object-center block" src={import("@assets/images/colegio.webp")} loading="lazy">
 						</div>
 						<div class="md:p-2 p-1 w-1/2">
-							<img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/salon-actos.webp" loading="lazy">
+							<Image alt="gallery" class="w-full object-cover h-full object-center block" src={import("@assets/images/salon-actos.webp")} loading="lazy">
 						</div>
 						<div class="md:p-2 p-1 w-1/2">
-							<img alt="gallery" class="w-full object-cover h-full object-center block" src="/images/parque2.webp" loading="lazy">
+							<Image alt="gallery" class="w-full object-cover h-full object-center block" src={import("@assets/images/parque2.webp")} loading="lazy">
 						</div>
 					</div>
 				</div>
