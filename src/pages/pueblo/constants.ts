@@ -42,7 +42,7 @@ export const PLACES = [
 				title: 'Bombos manchegos',
 				image: '/images/bombo.webp',
 				maps: ['https://goo.gl/maps/tdUNFWYxPF1MVXZk7', 'https://goo.gl/maps/hsnc56RKPqBXoAcR7', 'https://goo.gl/maps/Q4VzuQTcfvgTKu1SA'],
-				body: 'Son unas construcciones rural tradicionales de esta zona de La Mancha, utilizada como refugio para ' +
+				body: 'Son unas construcciones rurales, tradicionales de esta zona de La Mancha, utilizada como refugio para ' +
 					'pastores y labradores durante las faenas agrícolas y pastoriles. Es una estructura circular o elíptica, ' +
 					'construida con piedras sin argamasa, con una falsa cúpula hecha de lajas. En su interior, tiene una cocina, ' +
 					'chimenea, camastros y pesebre para animales. Son un ejemplo de arquitectura rural manchega ' +
