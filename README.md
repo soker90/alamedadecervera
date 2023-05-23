@@ -11,7 +11,7 @@
 
 Este proyecto es una página web desarrollada con el objetivo de proporcionar información sobre el encantador pueblo de Alameda de Cervera en Ciudad Real, España.
 
-![Alameda de Cervera](public/images/puente.jpg)
+![Alameda de Cervera](public/images/puente.webp)
 
 ## ¿Qué encontrarás en esta web? 📖
 
