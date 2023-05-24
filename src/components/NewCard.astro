@@ -1,17 +1,18 @@
 ---
-const {title, date, description, image} = Astro.props;
+const {title, date, description, image, url} = Astro.props;
 
 ---
-
-<div class="mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow">
-  <img
-    src={image}
-    class="aspect-video w-full object-cover"
-    alt=""
-  />
-  <div class="p-4">
-    <p class="mb-1 text-sm text-primary-500"><time>{date}</time></p>
-    <h3 class="text-xl font-medium text-gray-900">{title}</h3>
-    <p class="mt-1 text-gray-500">{description}</p>
+<a href={url} class="cursor-pointer">
+  <div class="mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow">
+    <img
+      src={image}
+      class="aspect-video w-full object-cover"
+      alt="noticia-imagen"
+    />
+    <div class="p-4">
+      <p class="mb-1 text-sm text-primary-500"><time>{date}</time></p>
+      <h3 class="text-xl font-medium text-gray-900">{title}</h3>
+      <p class="mt-1 text-gray-500">{description}</p>
+    </div>
   </div>
-</div>
+</a>
