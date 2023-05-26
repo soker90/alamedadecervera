@@ -101,7 +101,7 @@ const posts = (await getCollection('blog')).slice(0, 3);
 						imágenes</h2>
 				</div>
 				<div class="flex flex-wrap md:-m-2 -m-1">
-					<div class="flex flex-wrap w-1/2">
+					<div class="flex flex-wrap md:w-1/2">
 						<div class="md:p-2 p-1 w-1/2">
 							<Image alt="gallery1" class="w-full object-cover h-full object-center block"
 									 src={import("@assets/images/ermita-san-lorenzo.webp")} loading="lazy">
@@ -113,7 +113,7 @@ const posts = (await getCollection('blog')).slice(0, 3);
 							<Image alt="gallery3" class="w-full h-full object-cover object-center block" src={import("@assets/images/casa-grande.webp")} loading="lazy">
 						</div>
 					</div>
-					<div class="flex flex-wrap w-1/2">
+					<div class="flex flex-wrap md:w-1/2">
 						<div class="md:p-2 p-1 w-full">
 							<Image alt="gallery" class="w-full h-full object-cover object-center block" src={import("@assets/images/colegio.webp")} loading="lazy">
 						</div>
