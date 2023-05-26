@@ -1,5 +1,12 @@
 export const SECTIONS = [
 	{
+		title: 'Actualidad',
+		href: '/actualidad/1',
+		description:
+			'Información de actualidad sobre la Alameda',
+		logo: '/icons/news.svg'
+	},
+	{
 		title: 'Historia',
 		href: '/historia',
 		description:
