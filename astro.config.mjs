@@ -22,7 +22,8 @@ export default defineConfig({
 		imageConfig: {
 			sizes: [320, 640, 1280]
 		},
-		imageService: true
+		imageService: true,
+		analytics: true
 	}),
 	experimental: {
 		assets: true
