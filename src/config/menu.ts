@@ -1,5 +1,12 @@
 export const SECTIONS = [
 	{
+		title: 'Actualidad',
+		href: '/actualidad/1',
+		description:
+			'Información de actualidad sobre la Alameda',
+		logo: '/icons/news.svg'
+	},
+	{
 		title: 'Historia',
 		href: '/historia',
 		description:
@@ -20,9 +27,9 @@ export const SECTIONS = [
 		logo: '/icons/activity.svg'
 	},
 	{
-		title: 'Comercios',
-		href: '/comercios',
-		description: 'Comercios en el pueblo o con reparto a domicilio en él',
+		title: 'Empresas',
+		href: '/empresas',
+		description: 'Empresas en el pueblo o con servicio a domicilio en él',
 		logo: '/icons/shop.svg'
 	},
 	{
