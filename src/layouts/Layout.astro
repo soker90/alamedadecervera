@@ -20,7 +20,8 @@ const seoTitle = title ? `${title} | Alameda de Cervera` : "Alameda de Cervera";
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<title>{seoTitle}</title>
 		<link rel="canonical" href={Astro.url.href} />
-		<link rel="sitemap" href="/sitemap-index.xml" />
+		<link rel="sitemap" href="https://alamedadecervera.com/sitemap-index.xml" />
+		<link rel="alternate" type="application/rss+xml" href="https://alamedadecervera.com/rss.xml">
 		<meta name="description" content={description} />
 		<meta property="og:title" content={seoTitle} />
 		<meta property="og:description" content={description} />
