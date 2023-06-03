@@ -118,7 +118,7 @@ This file is in BETA. Please test and contribute to the discussion:
               Visitar web &#x2192;
             </a>
           </header>
-          <h2>Últimas recetas</h2>
+          <h2>Últimas noticias</h2>
           <xsl:for-each select="/rss/channel/item">
             <div class="pb-5">
               <h3 class="mb-0">
@@ -132,6 +132,9 @@ This file is in BETA. Please test and contribute to the discussion:
               <small class="text-gray">
                 Publicado: <xsl:value-of select="pubDate" />
               </small>
+              <article class="text-gray">
+                <xsl:value-of select="content" />
+              </article>
             </div>
           </xsl:for-each>
         </div>
