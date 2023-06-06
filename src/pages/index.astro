@@ -4,7 +4,8 @@ import { getCollection } from 'astro:content';
 
 import Layout from "@layouts/Layout.astro";
 import NewCard from '@components/NewCard.astro';
-import {SECTIONS} from "../config";
+import {RSS, SECTIONS} from "../config";
+import Rss from '@components/Rss.astro';
 
 const posts = (await getCollection('blog')).slice(0, 3);
 
@@ -20,7 +21,7 @@ const posts = (await getCollection('blog')).slice(0, 3);
 						alt="logo"
 						src="/icon.svg"
 						class="h-48 w-48 hidden sm:block sm:mx-auto sm:mb-8 sm:mt-4 xl:mx-auto"
-					/>
+					/>			
 					<h1 class="text-2xl font-bold text-gray-900 md:text-3xl text-center">
 						Bienvenido a Alameda de Cervera
 					</h1>
@@ -30,6 +31,9 @@ const posts = (await getCollection('blog')).slice(0, 3);
 						Aquí podrás encontrar información sobre el municipio, sus fiestas, su historia, sus
 						tradiciones...
 					</p>
+					
+					<Rss className="hidden text-gray-500 md:mt-8 md:block text-center"/>
+
 				</div>
 			</div>
 
