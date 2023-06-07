@@ -22,6 +22,8 @@ export const PLACES = [
 			{
 				title: 'Puente del Vado Lancero (Puente del Balancero)',
 				image: '/images/puente-vado-lancero.webp',
+				imageComment: 'Imagen de Ruidera treasures',
+				sourceImage: 'https://ruideratreasures.es/puentes-de-alameda-de-cervera/',
 				maps: ['https://goo.gl/maps/V3djyGQDaGuzckzV7'],
 				body: 'Construido entre 1797 y 1799,  se encuentra en dirección a Alcázar de San Juan, en las cercanías de los antiguos ' +
 					'molinos de pólvora del rey. Está compuesto por dos arcos de medio punto de piedra caliza, enmarcados por estribos ' +
