@@ -2,13 +2,24 @@
 import Layout from "@layouts/Layout.astro";
 import SendMailIcon from "@components/SendMailIcon.astro";
 import FontBold from "@components/FontBold.astro";
+import Place from "@components/Place.astro";
+
+import { BUSINESS } from "../constants/bussiness";
 
 const mailto =
 	"mailto:info@alamedadecervera.com?subject=Solicitud de agregación de empresa&body=Hola, me gustaría aparecer en el apartado de empresas. Adjunto la información que me gustaría que apareciera en la web:";
 ---
 
 <Layout title="Empresas">
-	<main class="m-auto">
+	<main>
+		<section>
+			{
+				BUSINESS.map(({ places }) =>
+					places.map((place) => <Place place={place} />)
+				)
+			}
+		</section>
+
 		<section class="bg-white">
 			<div
 				class="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row"
@@ -16,7 +27,7 @@ const mailto =
 				<div class="flex justify-center xl:w-1/2">
 					<img
 						class="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
-						src="/images/resources/empresas.webp"
+						src="/images/resources/alojamiento.webp"
 						alt=""
 					/>
 				</div>

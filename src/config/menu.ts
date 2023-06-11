@@ -31,12 +31,6 @@ export const SECTIONS = [
 		href: '/empresas',
 		description: 'Empresas en el pueblo o con servicio a domicilio en él',
 		logo: '/icons/shop.svg'
-	},
-	{
-		title: 'Alojamiento',
-		href: '/alojamiento',
-		description: '¿Quieres visitarnos? Echa un vistazo a donde puedes alojarte',
-		logo: '/icons/bed.svg'
 	}
 	// {title: 'En venta', href: '/en-venta', description: 'Casas, chalets y terrenos en venta'},
 	// {
