@@ -2,7 +2,7 @@
 import MapsIcon from "./MapsIcon.astro";
 const { place } = Astro.props;
 
-const { image, title, web, body, maps, imageComment, sourceImage } = place;
+const { image, title, web, body, maps, imageComment, sourceImage, tel } = place;
 ---
 
 <section class="text-gray-600 body-font">
@@ -34,7 +34,7 @@ const { image, title, web, body, maps, imageComment, sourceImage } = place;
 				{title}
 			</h1>
 			<p class="leading-relaxed" set:html={body} />
-			<div class="flex justify-center mt-8">
+			<div class="flex flex-wrap flex-auto  mt-8">
 				{
 					maps.map((map, index) => (
 						<a
@@ -62,6 +62,18 @@ const { image, title, web, body, maps, imageComment, sourceImage } = place;
 							Web
 						</a>
 					)
+				}
+				{
+					tel?.map(num => (
+					<a
+							target="_blank"
+							rel="noopener noreferrer"
+							class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+							href={`tel:+34${num.replace(/\s+/g, '')}`}
+						>
+							{num}
+						</a>
+					)) 
 				}
 			</div>
 		</div>
