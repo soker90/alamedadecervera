@@ -2,7 +2,7 @@
 import MapsIcon from "./MapsIcon.astro";
 const { place } = Astro.props;
 
-const { image, title, web, body, maps, imageComment, sourceImage } = place;
+const { image, title, web, body, maps, imageComment, sourceImage, tel } = place;
 ---
 
 <section class="text-gray-600 body-font">
@@ -34,15 +34,12 @@ const { image, title, web, body, maps, imageComment, sourceImage } = place;
 				{title}
 			</h1>
 			<p class="leading-relaxed" set:html={body} />
-			<div class="flex justify-center mt-8">
+			<div class="flex flex-wrap flex-auto gap-4">
 				{
 					maps.map((map, index) => (
 						<a
 							aria-label="Google Maps"
-							class:list={[
-								"inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg",
-								{ "ml-4": index > 0 },
-							]}
+							class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-8"
 							target="_blank"
 							rel="noopener noreferrer"
 							href={map}
@@ -56,12 +53,24 @@ const { image, title, web, body, maps, imageComment, sourceImage } = place;
 						<a
 							target="_blank"
 							rel="noopener noreferrer"
-							class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+							class="inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg mt-8"
 							href={web}
 						>
 							Web
 						</a>
 					)
+				}
+				{
+					tel?.map(num => (
+					<a
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg mt-8"
+							href={`tel:+34${num.replace(/\s+/g, '')}`}
+						>
+							{num}
+						</a>
+					)) 
 				}
 			</div>
 		</div>
