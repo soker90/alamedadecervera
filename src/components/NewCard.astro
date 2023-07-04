@@ -1,17 +1,25 @@
 ---
-const {title, date, description, image, url} = Astro.props;
-
+const { title, date, description, image, url, id } = Astro.props;
 ---
+
 <a href={url} class="cursor-pointer">
-  <div class="mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow h-full">
+  <div
+    class="mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow h-full"
+  >
     <img
       src={image}
       class="aspect-video w-full object-cover"
       alt="noticia-imagen"
+      style={`view-transition-name: new-${id}`}
     />
     <div class="p-4">
       <p class="mb-1 text-sm text-primary-500"><time>{date}</time></p>
-      <h3 class="text-xl font-medium text-gray-900">{title}</h3>
+      <h3
+        class="text-xl font-medium text-gray-900"
+        style={`view-transition-name: new-title-${id}`}
+      >
+        {title}
+      </h3>
       <p class="mt-1 text-gray-500">{description}</p>
     </div>
   </div>
