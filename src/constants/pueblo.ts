@@ -64,6 +64,13 @@ export const PLACES = [
 		category: 'Ocio',
 		places: [
 			{
+				title: 'Piscina municipal',
+				image: '/images/piscina.webp',
+				maps: ['https://goo.gl/maps/AMwLYt4Mai5eiGQH6'],
+				body: 'Abierta en verano. Dispone de una piscina grande y un bar en el que ofrece comidas. ' +
+				'Además, los Viernes, Sábados y Domingos por la noche, abre la terraza de fuera para cenar.'
+			},
+			{
 				title: 'Parque de D. Ramón Fernández Urrutia',
 				image: '/images/parque.webp',
 				maps: ['https://goo.gl/maps/TqhojU7CVaypS3jj8'],
