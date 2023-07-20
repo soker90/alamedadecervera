@@ -68,7 +68,8 @@ export const PLACES = [
 				image: '/images/piscina.webp',
 				maps: ['https://goo.gl/maps/AMwLYt4Mai5eiGQH6'],
 				body: 'Abierta en verano. Dispone de una piscina grande y un bar en el que ofrece comidas. ' +
-				'Además, los Viernes, Sábados y Domingos por la noche, abre la terraza de fuera para cenar.'
+				'Además, los Viernes, Sábados y Domingos por la noche, abre la terraza de fuera para cenar.' +
+				'Horario: L - D 12:00 - 20:30. Telf: 620 743 044'
 			},
 			{
 				title: 'Parque de D. Ramón Fernández Urrutia',
