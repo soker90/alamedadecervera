@@ -7,7 +7,9 @@ import NewCard from '@components/NewCard.astro';
 import {RSS, SECTIONS} from "../config";
 import Rss from '@components/Rss.astro';
 
-const posts = (await getCollection('blog')).slice(0, 3);
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 3);
 
 ---
 <Layout title='Inicio'>
