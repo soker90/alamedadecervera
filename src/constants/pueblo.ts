@@ -12,11 +12,11 @@ export const PLACES = [
 					'de caracol'
 			},
 			{
-				title: 'Ermita de San Lorenzo',
+				title: 'Parróquia de San Lorenzo',
 				image: '/images/ermita-san-lorenzo.webp',
 				maps: ['https://goo.gl/maps/tHyw4TR6AnPhPce16'],
-				body: 'Lugar de culto cercano al puente del Gran Prior, esta ermita recibe su nombre del patrón de la localidad, San Lorenzo. ' +
-				'Se puede encontrar su imagen en el interior de la ermita, a la que se tiene gran devoción tanto en la Alameda, como en los' +
+				body: 'Lugar de culto cercano al puente del Gran Prior, esta iglesia recibe su nombre del patrón de la localidad, San Lorenzo. ' +
+				'Se puede encontrar su imagen en el interior de la iglesia, a la que se tiene gran devoción tanto en la Alameda, como en los' +
 				'alrededores.'
 			},
 			{
