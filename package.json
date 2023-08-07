@@ -20,7 +20,6 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/image": "^0.17.2",
 		"@astrojs/mdx": "^0.19.4",
 		"@astrojs/preact": "^2.2.0",
 		"@astrojs/rss": "^2.4.3",
