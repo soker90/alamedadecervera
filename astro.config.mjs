@@ -1,9 +1,8 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, sharpImageService } from 'astro/config'
 import preact from '@astrojs/preact'
 import tailwind from '@astrojs/tailwind'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
-import image from '@astrojs/image'
 
 import vercel from '@astrojs/vercel/static'
 
@@ -11,12 +10,7 @@ import vercel from '@astrojs/vercel/static'
 export default defineConfig({
 	site: 'https://alamedadecervera.com',
 	// Enable Preact to support Preact JSX components.
-	integrations: [preact(), tailwind(), mdx(), sitemap(), image({
-		// Sharp is not supported for my computer
-		...(import.meta.env.MODE !== 'development' && {
-			serviceEntryPoint: '@astrojs/image/sharp'
-		})
-	})],
+	integrations: [preact(), tailwind(), mdx(), sitemap()],
 	output: 'static',
 	adapter: vercel({
 		imageConfig: {
@@ -27,5 +21,8 @@ export default defineConfig({
 	}),
 	experimental: {
 		assets: true
+	},
+	image: {
+		service: sharpImageService()
 	}
 })
