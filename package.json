@@ -17,7 +17,9 @@
 		"start": "astro build && astro preview",
 		"build": "astro build",
 		"preview": "astro preview",
-		"astro": "astro"
+		"astro": "astro",
+    "lint": "eslint ./src --ext .ts,.tsx,.astro",
+		"lint:fix": "eslint ./src --ext .ts,.tsx,.astro --fix"
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^0.19.4",

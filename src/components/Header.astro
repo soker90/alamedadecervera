@@ -1,22 +1,22 @@
 ---
-import {MENU} from "../config";
-import NavMenu from "@components/NavMenu";
-import MenuItem from "@components/MenuItem";
+import { MENU } from '../config'
+import NavMenu from '@components/NavMenu'
+import MenuItem from '@components/MenuItem';
 ---
-<header class="text-white body-font bg-primary">
-	<div class="container mx-auto flex flex-wrap p-5 items-center">
+<header class='text-white body-font bg-primary'>
+	<div class='container mx-auto flex flex-wrap p-5 items-center'>
 		<NavMenu client:visible/>
-		<a class="flex title-font font-medium items-center mb-0 m-auto lg:ml-0" href="/">
-			<img src="/icon.svg" alt="logo" class="w-10 h-10"/>
-			<span class="ml-3 text-xl">Alameda de Cervera</span>
+		<a class='flex title-font font-medium items-center mb-0 m-auto lg:ml-0' href='/'>
+			<img src='/icon.svg' alt='logo' class='w-10 h-10'/>
+			<span class='ml-3 text-xl'>Alameda de Cervera</span>
 		</a>
-		<nav class="md:ml-auto flex-wrap items-center justify-center hidden lg:block">
-			<ul class="flex">
-			{
-				MENU.map((menu) => 
-					<MenuItem {...menu} client:only />
-				)
-			}
+		<nav class='md:ml-auto flex-wrap items-center justify-center hidden lg:block'>
+			<ul class='flex'>
+				{
+					MENU.map((menu) =>
+						<MenuItem {...menu} client:only />
+					)
+				}
 			</ul>
 		</nav>
 	</div>
