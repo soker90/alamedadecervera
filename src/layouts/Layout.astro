@@ -1,42 +1,42 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 
 const {
 	title,
-	description = "Web dedicada a la pedanía de Alameda de Cervera (Ciudad Real) y a sus habitantes. Aquí podrás encontrar información sobre el municipio, sus fiestas, su historia, sus tradiciones... ",
-	image = "/images/puente.webp"
-} = Astro.props;
+	description = 'Web dedicada a la pedanía de Alameda de Cervera (Ciudad Real) y a sus habitantes. Aquí podrás encontrar información sobre el municipio, sus fiestas, su historia, sus tradiciones... ',
+	image = '/images/puente.webp'
+} = Astro.props
 
-const seoTitle = title ? `${title} | Alameda de Cervera` : "Alameda de Cervera";
+const seoTitle = title ? `${title} | Alameda de Cervera` : 'Alameda de Cervera';
 ---
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang='es'>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/favicon.ico" sizes="any" />
-		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' href='/favicon.ico' sizes='any' />
+		<link rel='icon' href='/icon.svg' type='image/svg+xml' />
+		<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 		<title>{seoTitle}</title>
-		<link rel="canonical" href={Astro.url.href} />
-		<link rel="sitemap" href="https://alamedadecervera.com/sitemap-index.xml" />
-		<link rel="alternate" type="application/rss+xml" href="https://alamedadecervera.com/rss.xml">
-		<meta name="description" content={description} />
-		<meta property="og:title" content={seoTitle} />
-		<meta property="og:description" content={description} />
+		<link rel='canonical' href={Astro.url.href} />
+		<link rel='sitemap' href='https://alamedadecervera.com/sitemap-index.xml' />
+		<link rel='alternate' type='application/rss+xml' href='https://alamedadecervera.com/rss.xml'>
+		<meta name='description' content={description} />
+		<meta property='og:title' content={seoTitle} />
+		<meta property='og:description' content={description} />
 		<meta
-			property="og:image"
+			property='og:image'
 			content={`https://alamedadecervera.com${image}`}
 		/>
-		<meta property="og:url" content={Astro.url.href} />
-		<meta property="og:locale" content="es_ES" />
-		<meta property="og:type" content="website" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="facebook-domain-verification" content="jhpi1sidqoeoryl40a0f8fzfnjody6" />
+		<meta property='og:url' content={Astro.url.href} />
+		<meta property='og:locale' content='es_ES' />
+		<meta property='og:type' content='website' />
+		<meta name='generator' content={Astro.generator} />
+		<meta name='facebook-domain-verification' content='jhpi1sidqoeoryl40a0f8fzfnjody6' />
 	</head>
-	<body class="flex flex-col min-h-screen overflow-x-hidden">
+	<body class='flex flex-col min-h-screen overflow-x-hidden'>
 		<Header />
 		<slot />
 		<Footer />
