@@ -23,7 +23,7 @@
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^0.19.4",
-		"@astrojs/preact": "^2.2.0",
+		"@astrojs/preact": "^2.2.2",
 		"@astrojs/rss": "^2.4.4",
 		"@astrojs/sitemap": "^2.0.1",
 		"@astrojs/tailwind": "^4.0.0",
