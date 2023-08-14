@@ -27,7 +27,7 @@
 		"@astrojs/rss": "^2.4.4",
 		"@astrojs/sitemap": "^2.0.1",
 		"@astrojs/tailwind": "^4.0.0",
-		"@astrojs/vercel": "^3.8.0",
+		"@astrojs/vercel": "^3.8.1",
 		"@preact/signals": "^1.2.1",
 		"astro": "^2.10.7",
 		"markdown-it": "^13.0.1",
