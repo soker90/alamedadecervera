@@ -31,7 +31,7 @@
 		"@preact/signals": "^1.2.1",
 		"astro": "^3.0.3",
 		"markdown-it": "^13.0.1",
-		"photoswipe": "^5.3.8",
+		"photoswipe": "^5.4.0",
 		"preact": "^10.17.1",
 		"sanitize-html": "^2.11.0",
 		"tailwindcss": "^3.3.3"
