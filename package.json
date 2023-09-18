@@ -18,6 +18,8 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
+		"format": "prettier --check .",
+		"format:fix": "prettier -w .",
 		"lint": "eslint ./src --ext .ts,.tsx,.astro",
 		"lint:fix": "eslint ./src --ext .ts,.tsx,.astro --fix"
 	},
@@ -27,7 +29,7 @@
 		"@astrojs/rss": "^3.0.0",
 		"@astrojs/sitemap": "^3.0.0",
 		"@astrojs/tailwind": "^5.0.0",
-		"@astrojs/vercel": "^4.0.5",
+		"@astrojs/vercel": "^5.0.0",
 		"@preact/signals": "^1.2.1",
 		"astro": "^3.0.3",
 		"markdown-it": "^13.0.1",

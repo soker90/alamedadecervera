@@ -17,6 +17,11 @@ export default defineConfig({
 			sizes: [320, 640, 1280]
 		},
 		imageService: true,
-		analytics: true
+		webAnalytics: {
+			enabled: true
+		},
+		speedInsights: {
+			enabled: true
+		}
 	})
 })

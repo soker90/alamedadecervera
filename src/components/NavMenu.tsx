@@ -10,17 +10,24 @@ const NavMenu = () => {
 
 	return (
 		<>
-			<button
-				class='p-2 lg:hidden z-20'
-				onClick={toggleMenu}
-				aria-label='Toggle menu'
-			>
-				{showMenu
-					? <svg className='h-6 w-6 text-gray-900' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-						<path d='M6 18L18 6M6 6L18 18' stroke='currentColor' stroke-width='2' stroke-linecap='round'
-							stroke-linejoin='round'/>
+			<button class='p-2 lg:hidden z-20' onClick={toggleMenu} aria-label='Toggle menu'>
+				{showMenu ? (
+					<svg
+						className='h-6 w-6 text-gray-900'
+						viewBox='0 0 24 24'
+						fill='none'
+						xmlns='http://www.w3.org/2000/svg'
+					>
+						<path
+							d='M6 18L18 6M6 6L18 18'
+							stroke='currentColor'
+							stroke-width='2'
+							stroke-linecap='round'
+							stroke-linejoin='round'
+						/>
 					</svg>
-					: <svg
+				) : (
+					<svg
 						className='h-6 w-6'
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
@@ -34,8 +41,7 @@ const NavMenu = () => {
 							d='M4 6h16M4 12h16M4 18h16'
 						/>
 					</svg>
-				}
-
+				)}
 			</button>
 			<nav
 				className={`fixed bg-gray-50 top-0 left-0 w-full h-full overflow-auto z-10 ${
