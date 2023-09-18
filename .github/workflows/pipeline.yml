@@ -46,7 +46,7 @@ jobs:
         run: npm run format
 
   build:
-    needs: [ lint, prettier ]
+    needs: [lint, prettier]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
