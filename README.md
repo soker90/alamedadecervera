@@ -15,7 +15,7 @@ Este proyecto es una página web desarrollada con el objetivo de proporcionar in
 ## ¿Qué encontrarás en esta web? 📖
 
 - Información general sobre Alameda de Cervera, su ubicación, historia y características.
-- Lugares de interés turístico, como la Ermita de San Lorenzo, el puente del Gran Prior, el Castillo de la Estrella y el parque de D. Ramón Fernández Urrutia.
+- Lugares de interés turístico, como la Parroquia de San Lorenzo, el puente del Gran Prior, el Castillo de Cervera y el parque de D. Ramón Fernández Urrutia.
 - Datos útiles para los visitantes, como alojamiento, autobuses, bares y actividades recomendadas en la zona.
 - Galería de imágenes con fotos del pueblo y sus alrededores.
 
