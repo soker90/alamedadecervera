@@ -23,14 +23,14 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          cache: "npm"
-          node-version-file: ".nvmrc"
+          cache: 'npm'
+          node-version-file: '.nvmrc'
       - name: Install dependencies
-        run: npm i
+        run: npm ci
       - name: Lint
         run: npm run lint
 
-  build:
+  prettier:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -38,9 +38,25 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          cache: "npm"
-          node-version-file: ".nvmrc"
+          cache: 'npm'
+          node-version-file: '.nvmrc'
       - name: Install dependencies
-        run: npm i 
+        run: npm ci
+      - name: Prettier
+        run: npm run format
+
+  build:
+    needs: [ lint, prettier ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+      - name: Install dependencies
+        run: npm i
       - name: Build
         run: npm run build

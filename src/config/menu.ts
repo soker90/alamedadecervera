@@ -2,15 +2,13 @@ export const SECTIONS = [
 	{
 		title: 'Actualidad',
 		href: '/actualidad/1',
-		description:
-			'Información de actualidad sobre la Alameda',
+		description: 'Información de actualidad sobre la Alameda',
 		logo: '/icons/news.svg'
 	},
 	{
 		title: 'Historia',
 		href: '/historia',
-		description:
-			'Conoce algunos acontecimientos históricos que ocurrieron aquí',
+		description: 'Conoce algunos acontecimientos históricos que ocurrieron aquí',
 		logo: '/icons/history.svg'
 	},
 	{
@@ -22,8 +20,7 @@ export const SECTIONS = [
 	{
 		title: 'Actividades',
 		href: '/actividades',
-		description:
-			'Te mostramos algunas de las actividades que puedes realizar en nuestro pueblo',
+		description: 'Te mostramos algunas de las actividades que puedes realizar en nuestro pueblo',
 		logo: '/icons/activity.svg'
 	},
 	{

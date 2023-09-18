@@ -18,6 +18,8 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
+		"format": "prettier --check .",
+		"format:fix": "prettier -w .",
 		"lint": "eslint ./src --ext .ts,.tsx,.astro",
 		"lint:fix": "eslint ./src --ext .ts,.tsx,.astro --fix"
 	},

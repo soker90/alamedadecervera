@@ -8,7 +8,6 @@
 [![StandardJS](https://img.shields.io/badge/Code%20Style-StandardJS-f1e05a)](https://standardjs.com/)
 [![Prettier](https://img.shields.io/badge/Code%20Formatting-Prettier-ff69b4)](https://prettier.io/)
 
-
 Este proyecto es una página web desarrollada con el objetivo de proporcionar información sobre el encantador pueblo de Alameda de Cervera en Ciudad Real, España.
 
 ![Alameda de Cervera](https://api.microlink.io/?url=https%3A%2F%2Falamedadecervera.com%2F&screenshot=true&embed=screenshot.url)
