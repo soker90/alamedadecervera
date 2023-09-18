@@ -24,7 +24,7 @@
 		"lint:fix": "eslint ./src --ext .ts,.tsx,.astro --fix"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "^1.0.0",
+		"@astrojs/mdx": "^1.1.0",
 		"@astrojs/preact": "^3.0.0",
 		"@astrojs/rss": "^3.0.0",
 		"@astrojs/sitemap": "^3.0.0",
