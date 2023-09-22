@@ -21,7 +21,9 @@
 		"format": "prettier --check .",
 		"format:fix": "prettier -w .",
 		"lint": "eslint ./src --ext .ts,.tsx,.astro",
-		"lint:fix": "eslint ./src --ext .ts,.tsx,.astro --fix"
+		"lint:fix": "eslint ./src --ext .ts,.tsx,.astro --fix",
+		"screenshot": "playwright test",
+		"upload": "npx @argos-ci/cli upload ./screenshots"
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^1.1.0",
@@ -39,9 +41,13 @@
 		"tailwindcss": "^3.3.3"
 	},
 	"devDependencies": {
+		"@argos-ci/cli": "^0.6.0",
+		"@argos-ci/playwright": "^0.0.7",
+		"@playwright/test": "^1.38.1",
 		"@types/photoswipe": "^4.1.2",
 		"@typescript-eslint/eslint-plugin": "^6.7.0",
 		"@typescript-eslint/parser": "^6.7.0",
+		"cheerio": "^1.0.0-rc.12",
 		"eslint": "^8.49.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-config-standard": "^17.0.0",
