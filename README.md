@@ -7,6 +7,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-38b2ac)](https://tailwindcss.com/)
 [![StandardJS](https://img.shields.io/badge/Code%20Style-StandardJS-f1e05a)](https://standardjs.com/)
 [![Prettier](https://img.shields.io/badge/Code%20Formatting-Prettier-ff69b4)](https://prettier.io/)
+[![Covered by Argos Visual Testing](https://argos-ci.com/badge.svg)](https://app.argos-ci.com/soker90/alamedadecervera/reference)
 
 Este proyecto es una página web desarrollada con el objetivo de proporcionar información sobre el encantador pueblo de Alameda de Cervera en Ciudad Real, España.
 

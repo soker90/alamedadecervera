@@ -23,12 +23,11 @@ function pathnameToArgosName(pathname: string): string {
 	return pathname.replace(/^\/|\/$/g, '') || 'index'
 }
 
-
 function screenshotPathname(pathname: string) {
 	test(`pathname ${pathname}`, async ({ page }) => {
 		const url = siteUrl + pathname
 		await page.goto(url)
-		await page.waitForLoadState("networkidle"); // Wait redirect pages
+		await page.waitForLoadState('networkidle') // Wait redirect pages
 		await page.addStyleTag({ content: stylesheet })
 		await argosScreenshot(page, pathnameToArgosName(pathname))
 	})

@@ -23,7 +23,7 @@
 		"lint": "eslint ./src --ext .ts,.tsx,.astro",
 		"lint:fix": "eslint ./src --ext .ts,.tsx,.astro --fix",
 		"screenshot": "playwright test",
-    "upload": "npx @argos-ci/cli upload ./screenshots"
+		"upload": "npx @argos-ci/cli upload ./screenshots"
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^1.1.0",
