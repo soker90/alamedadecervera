@@ -9,6 +9,7 @@ import vercel from '@astrojs/vercel/static'
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://alamedadecervera.com',
+	server: { port: 3000 },
 	// Enable Preact to support Preact JSX components.
 	integrations: [preact(), tailwind(), mdx(), sitemap()],
 	output: 'static',
