@@ -4,7 +4,7 @@ import type { PlaywrightTestConfig } from '@playwright/test'
 const config: PlaywrightTestConfig = {
 	webServer: {
 		port: 4321,
-		command: 'npm start'
+		command: 'npm run dev'
 	},
 	workers: process.env.CI ? 5 : undefined,
 	projects: [

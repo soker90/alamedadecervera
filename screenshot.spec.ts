@@ -9,7 +9,7 @@ const sitemapPath = './.vercel/output/static/sitemap-0.xml'
 const stylesheetPath = './screenshot.css'
 const stylesheet = fs.readFileSync(stylesheetPath).toString()
 
-function extractSitemapPathnames(sitemapPath: string): string[] {
+const extractSitemapPathnames = (sitemapPath: string): string[] => {
 	const sitemap = fs.readFileSync(sitemapPath).toString()
 	const $ = cheerio.load(sitemap, { xmlMode: true })
 	const urls: string[] = []
@@ -19,17 +19,27 @@ function extractSitemapPathnames(sitemapPath: string): string[] {
 	return urls.map((url) => new URL(url).pathname)
 }
 
-function pathnameToArgosName(browserName: string, pathname: string): string {
-	return `${browserName}/${pathname.replace(/^\/|\/$/g, '') || 'index'}`
+const pathnameToArgosName = ({
+	browserName,
+	isMobile,
+	pathname
+}: {
+	browserName: string
+	isMobile: boolean
+	pathname: string
+}): string => {
+	return `${browserName}/${isMobile ? 'mobile' : 'desktop'}/${
+		pathname.replace(/^\/|\/$/g, '') || 'index'
+	}`
 }
 
-function screenshotPathname(pathname: string) {
-	test(`pathname ${pathname}`, async ({ page, browserName }) => {
+const screenshotPathname = (pathname: string) => {
+	test(`pathname ${pathname}`, async ({ page, browserName, isMobile }) => {
 		const url = siteUrl + pathname
 		await page.goto(url)
 		await page.waitForLoadState('networkidle') // Wait redirect pages
 		await page.addStyleTag({ content: stylesheet })
-		await argosScreenshot(page, pathnameToArgosName(browserName, pathname))
+		await argosScreenshot(page, pathnameToArgosName({ browserName, pathname, isMobile }))
 	})
 }
 
