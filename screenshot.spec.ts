@@ -19,17 +19,17 @@ function extractSitemapPathnames(sitemapPath: string): string[] {
 	return urls.map((url) => new URL(url).pathname)
 }
 
-function pathnameToArgosName(pathname: string): string {
-	return pathname.replace(/^\/|\/$/g, '') || 'index'
+function pathnameToArgosName(browserName: string, pathname: string): string {
+	return `${browserName}/${pathname.replace(/^\/|\/$/g, '') || 'index'}`
 }
 
 function screenshotPathname(pathname: string) {
-	test(`pathname ${pathname}`, async ({ page }) => {
+	test(`pathname ${pathname}`, async ({ page, browserName }) => {
 		const url = siteUrl + pathname
 		await page.goto(url)
 		await page.waitForLoadState('networkidle') // Wait redirect pages
 		await page.addStyleTag({ content: stylesheet })
-		await argosScreenshot(page, pathnameToArgosName(pathname))
+		await argosScreenshot(page, pathnameToArgosName(browserName, pathname))
 	})
 }
 
