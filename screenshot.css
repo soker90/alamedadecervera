@@ -1,3 +1,7 @@
 iframe {
 	visibility: hidden;
 }
+
+img[loading='lazy'] {
+	visibility: hidden !important;
+}
