@@ -5,7 +5,7 @@ import { argosScreenshot } from '@argos-ci/playwright'
 
 // Constants:
 const siteUrl = 'http://localhost:3000'
-const sitemapPath = './.vercel/output/static/sitemap-index.xml'
+const sitemapPath = './.vercel/output/static/sitemap-0.xml'
 const stylesheetPath = './screenshot.css'
 const stylesheet = fs.readFileSync(stylesheetPath).toString()
 
