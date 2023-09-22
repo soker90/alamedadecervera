@@ -5,7 +5,8 @@ They don't consistently render exactly the same across CI runs
  */
 
 /* Iframes can load lazily */
-iframe {
+iframe,
+img[src$='.gif'] {
 	visibility: hidden;
 }
 
