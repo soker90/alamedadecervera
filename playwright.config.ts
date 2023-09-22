@@ -3,7 +3,7 @@ import type { PlaywrightTestConfig } from '@playwright/test'
 
 const config: PlaywrightTestConfig = {
 	webServer: {
-		port: 3000,
+		port: 4321,
 		command: 'npm start'
 	},
 	projects: [

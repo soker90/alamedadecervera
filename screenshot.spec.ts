@@ -4,7 +4,7 @@ import { test } from '@playwright/test'
 import { argosScreenshot } from '@argos-ci/playwright'
 
 // Constants:
-const siteUrl = 'http://localhost:3000'
+const siteUrl = 'http://localhost:4321'
 const sitemapPath = './.vercel/output/static/sitemap-0.xml'
 const stylesheetPath = './screenshot.css'
 const stylesheet = fs.readFileSync(stylesheetPath).toString()
@@ -28,12 +28,13 @@ function screenshotPathname(pathname: string) {
 	test(`pathname ${pathname}`, async ({ page }) => {
 		const url = siteUrl + pathname
 		await page.goto(url)
+		await page.waitForLoadState("networkidle"); // Wait redirect pages
 		await page.addStyleTag({ content: stylesheet })
 		await argosScreenshot(page, pathnameToArgosName(pathname))
 	})
 }
 
-test.describe('Docusaurus site screenshots', () => {
+test.describe('Site screenshots', () => {
 	const pathnames = extractSitemapPathnames(sitemapPath)
 	console.log('Pathnames to screenshot:', pathnames)
 	pathnames.forEach(screenshotPathname)
