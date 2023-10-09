@@ -29,7 +29,7 @@
 		"@astrojs/mdx": "^1.1.0",
 		"@astrojs/preact": "^3.0.0",
 		"@astrojs/rss": "^3.0.0",
-		"@astrojs/sitemap": "^3.0.0",
+		"@astrojs/sitemap": "^3.0.1",
 		"@astrojs/tailwind": "^5.0.0",
 		"@astrojs/vercel": "^5.0.2",
 		"@preact/signals": "^1.2.1",
