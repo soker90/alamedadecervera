@@ -57,6 +57,6 @@
 		"eslint-plugin-promise": "^6.0.1",
 		"prettier": "^3.1.1",
 		"prettier-plugin-astro": "^0.12.2",
-		"sharp": "^0.32.6"
+		"sharp": "^0.33.1"
 	}
 }
