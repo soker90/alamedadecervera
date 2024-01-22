@@ -41,7 +41,7 @@
 		"tailwindcss": "^3.4.1"
 	},
 	"devDependencies": {
-		"@argos-ci/cli": "^1.0.4",
+		"@argos-ci/cli": "^1.0.6",
 		"@argos-ci/playwright": "^1.6.3",
 		"@playwright/test": "^1.40.1",
 		"@types/photoswipe": "^4.1.6",
