@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import Geocaching from '../components/Geocaching.astro'
+import Event from '../components/Event.astro'
 
 const GEOCACHES = [{ title: 'Alameda de Cervera', url: 'https://coord.info/GC6YN06' }, {
 	title: 'Canal del Guadiana',
@@ -37,7 +38,32 @@ const CELEBRATIONS = [
 <Layout title='Actividades'>
 	<main class='m-auto'>
 		<section class='text-gray-600 body-font'>
-			<div class='container px-5 py-24 mx-auto'>
+			<div class='container px-5 pt-24 pb-12 mx-auto'>
+				<div class='text-center mb-10'>
+					<h1
+						class='sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4'
+					>
+						Fiestas locales
+					</h1>
+					<div
+						class='text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-left space-y-4'
+					>
+						<p>
+							Hay varias festividades que se celebran a lo largo del año en Alameda de Cervera, entre ellas:
+						</p>
+
+					</div>
+				</div>
+				<div class='flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2'>
+					{CELEBRATIONS.map(celebration =>
+						<Event data={celebration}/>)}
+				</div>
+
+			</div>
+		</section>
+
+		<section class='text-gray-600 body-font'>
+			<div class='container px-5 pt-24 pb-12 mx-auto'>
 				<div class='text-center mb-20'>
 					<h1
 						class='sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4'
@@ -107,7 +133,7 @@ const CELEBRATIONS = [
 		</section>
 
 		<section class='text-gray-600 body-font'>
-			<div class='container px-5 py-24 mx-auto'>
+			<div class='container px-5 pt-24 pb-12 mx-auto'>
 				<div class='text-center mb-20'>
 					<h1
 						class='sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4'
