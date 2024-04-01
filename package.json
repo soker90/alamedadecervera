@@ -46,7 +46,7 @@
 		"@argos-ci/playwright": "^1.9.3",
 		"@playwright/test": "^1.42.0",
 		"@types/photoswipe": "^4.1.6",
-		"@typescript-eslint/eslint-plugin": "^7.0.2",
+		"@typescript-eslint/eslint-plugin": "^7.4.0",
 		"@typescript-eslint/parser": "^7.1.0",
 		"cheerio": "^1.0.0-rc.12",
 		"eslint": "^8.57.0",
