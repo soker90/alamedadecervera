@@ -14,7 +14,7 @@ import MenuItem from '@components/MenuItem';
 			<ul class='flex'>
 				{
 					MENU.map((menu) =>
-						<MenuItem {...menu} client:only />
+						<MenuItem {...menu} client:only="preact" />
 					)
 				}
 			</ul>
