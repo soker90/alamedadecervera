@@ -1,0 +1,208 @@
+{
+    id: 'san-isidro',
+    permalink: 'san-isidro/cultos',
+    title: 'Programa de cultos y actos',
+    tagline: 'San Isidro 2024',
+    days: Array(6) [
+      {
+        title: 'Sábado 11 de mayo de 2024',
+        event: [
+          {
+            title: 
+              'Presentación de Damas de Honor San Isidro 2024 e imposición de ramos y bandas',
+            time: '20:30',
+            description: '',
+            location: 'Iglesia de San Francisco',
+            map: 'https://maps.app.goo.gl/fPhJi5kqEb1aJwFN6',
+            image: 
+              '/images/carteles/PRESENTACIÓN DE DAMAS Y CANTO DE MAYOS A SAN ISIDRO.webp'
+          },
+          {
+            title: 'Mayos en honor a San Isidro',
+            time: '21:00',
+            description: 'A cargo de Asociaciones y Grupos Locales\n',
+            location: 'Iglesia de San Francisco',
+            map: 'https://goo.gl/maps/Juk88fLdCBqRcEqF7',
+            image: ''
+          }
+        ]
+      },
+      {
+        title: 'Domingo 12 de mayo de 2024',
+        event: [
+          {
+            title: 'II Carrera de Orientación "San Isidro"',
+            time: '10:00',
+            description: '',
+            location: 'Ermita de San Isidro',
+            map: 'https://maps.app.goo.gl/qvFkeeCCes3QUHHNA',
+            image: 
+              '/images/carteles/CARTEL II CARRERA DE ORIENTACIÓN SAN ISIDRO.webp',
+            buttons: [
+              {
+                text: 'Inscribirme',
+                link: 
+                  'https://www.deporticket.com/web-evento/9765-ii-carrera-de-orientacion-san-isidro'
+              }
+            ]
+          },
+          {
+            title: 'Juegos populares',
+            time: '12:00',
+            description: 
+              'Carrera de sacos, relevos con cuchara y carrera de triciclos. Inscripciones gratuitas.\n' +
+              '',
+            location: 'Ermita de San Isidro',
+            map: 'https://maps.app.goo.gl/qvFkeeCCes3QUHHNA',
+            image: '/images/carteles/JUEGOS Y DEPORTES TRADICIONALES.webp',
+            buttons: [
+              {
+                text: 'Inscribirme',
+                link: 
+                  'https://hermandadsanisidrolabrador.es/inscripciones/juegos-populares'
+              }
+            ]
+          },
+          {
+            title: 'II Concurso de dibujo infantil',
+            time: '13:00',
+            description: 
+              'Temática: ¿Que es San Isidro para ti? Inscripciones gratuitas\n' +
+              '',
+            location: 'Ermita de San Isidro',
+            map: 'https://maps.app.goo.gl/qvFkeeCCes3QUHHNA',
+            buttons: [
+              {
+                text: 'Inscribirme',
+                link: 
+                  'https://hermandadsanisidrolabrador.es/inscripciones/concurso-dibujo'
+              }
+            ]
+          },
+          {
+            title: 'Triduo en honor a San Isidro',
+            time: '20.00',
+            description: 'Familia Vargas Quiralte por sus difuntos.\n',
+            location: 'Iglesia de San Francisco',
+            map: 
+              'https://www.google.com/maps/place/Iglesia+y+convento+de+San+Francisco/@39.3887919,-3.210218,17z/data=!3m1!4b1!4m6!3m5!1s0xd69aeefb3165823:0x169fe142d9dfcbbe!8m2!3d39.3887879!4d-3.2053471!16s%2Fg%2F11bxg1p81f?entry=ttu'
+          }
+        ]
+      },
+      {
+        title: 'Lunes 13 de mayo de 2024',
+        event: [
+          {
+            title: 'Triduo en honor a San Isidro',
+            time: '20.00',
+            description: 'Familia Quirós Cencerrado por sus difuntos.\n',
+            location: 'Iglesia de San Francisco',
+            map: 
+              'https://www.google.com/maps/place/Iglesia+y+convento+de+San+Francisco/@39.3887879,-3.207922,17z/data=!4m14!1m7!3m6!1s0xd69aeefb3165823:0x169fe142d9dfcbbe!2sIglesia+y+convento+de+San+Francisco!8m2!3d39.3887879!4d-3.2053471!16s%2Fg%2F11bxg1p81f!3m5!1s0xd69aeefb3165823:0x169fe142d9dfcbbe!8m2!3d39.3887879!4d-3.2053471!16s%2Fg%2F11bxg1p81f?entry=ttu'
+          }
+        ]
+      },
+      {
+        title: 'Martes 14 de mayo de 2024',
+        event: [
+          {
+            title: 'Triduo en honor a San Isidro',
+            time: '20.00 ',
+            description: 'Familia Vargas Parras en acción de gracias.\n',
+            location: 'Iglesia de San Francisco',
+            map: 
+              'https://www.google.es/maps/place/Iglesia+y+convento+de+San+Francisco/@39.388792,-3.207922,17z/data=!3m1!4b1!4m6!3m5!1s0xd69aeefb3165823:0x169fe142d9dfcbbe!8m2!3d39.3887879!4d-3.2053471!16s%2Fg%2F11bxg1p81f?entry=ttu'
+          },
+          {
+            title: 'II Noche Manchega',
+            time: '21:00',
+            description: 
+              'Las cuadrillas que deseen participar en la elaboración de platos manchegos típicos frios, como ensalada de limón. bizcochá, machacón o pipirrana, deberán apuntarse a través del formulario. Se prohibe la realización de fuego. Límite de inscripciones: 8 cuadrillas.\n' +
+              '\n' +
+              'Inscripciones gratuitas\n' +
+              '\n' +
+              'Horario de descarga de sillas, mesas y enseres: de 20:00 a 21:00\n' +
+              '',
+            location: 'Ermita de San Isidro',
+            image: '/images/carteles/I NOCHE MANCHEGA.webp',
+            buttons: [
+              {
+                text: 'Inscribirme',
+                link: 
+                  'https://hermandadsanisidrolabrador.es/inscripciones/noche-manchega'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Miércoles 15 de mayo de 2024',
+        event: [
+          {
+            title: 'Función solemne',
+            time: '11:00',
+            description: 
+              'Familias Abengózar Carrascosa y Abengózar Fernández por sus difuntos.\n' +
+              '',
+            location: 'Iglesia de San Francisco',
+            map: 'https://maps.app.goo.gl/fPhJi5kqEb1aJwFN6'
+          },
+          {
+            title: 'Subida de San Isidro a su ermita',
+            time: '12: 00',
+            description: 'ITINERARIO:\n' +
+              '\n' +
+              'Iglesia de San Francisco, Altozano de la Inmaculada, C/ San Francisco, Plaza de España, C/ Emilio Castelar, C/ Miguel de Unamuno, C/ Pineda, C/ San Antón, C/ Fray Indalecio Casero, C/ La Virgen, C/ Federico Álvarez, Paseo de San Isidro, camino de la ermita, ermita de San Isidro.\n' +
+              '',
+            location: 'Iglesia de San Francisco - Ermita de San Isidro',
+            map: 'https://maps.app.goo.gl/fPhJi5kqEb1aJwFN6'
+          },
+          {
+            title: 'Subasta de los objetos donados al Santo',
+            time: '12:45',
+            description: '',
+            location: 'Ermita de San Isidro',
+            map: 'https://maps.app.goo.gl/qvFkeeCCes3QUHHNA'
+          },
+          {
+            title: 'Sorteo de los premios de las papeletas',
+            time: '19:30',
+            description: '',
+            location: 'Ermita de San Isidro',
+            map: 'https://maps.app.goo.gl/qvFkeeCCes3QUHHNA'
+          },
+          {
+            title: 'Bajada del Santo a la Iglesia de San Francisco',
+            time: '20:00',
+            description: 'ITINERARIO:\n' +
+              '\n' +
+              'Camino de la ermita, Paseo de San Isidro, C/ Federico Álvarez, C/ San Isidro, C/ Virgen, Altozano de la Inmaculada y templo.\n' +
+              '',
+            location: 'Ermita de San Isidro - Iglesia de San Francisco',
+            map: 'https://maps.app.goo.gl/qvFkeeCCes3QUHHNA'
+          }
+        ]
+      },
+      {
+        title: 'Del 16 al 29 de mayo de 2024',
+        event: [
+          {
+            title: 'I Concurso de fotografía "San Isidro a través del objetivo"',
+            time: '-',
+            description: 
+              'Entrega de fotografías a través del correo electrónico: [hdadsanisidroalcazar@outlook.es](mailto:hdadsanisidroalcazar@outlook.es)\n' +
+              '\n' +
+              'Consulta las bases.\n' +
+              '',
+            buttons: [
+              {
+                text: 'Bases del concurso',
+                link: 
+                  'https://hermandadsanisidrolabrador.es/san-isidro/concurso-fotografia'
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
