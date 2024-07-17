@@ -3,7 +3,7 @@ const { title, date, description, image, url } = Astro.props;
 
 ---
 <a href={url} class='cursor-pointer'>
-	<div class='mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow h-full hover:animate-pop'>
+	<div class='mx-auto max-w-md overflow-hidden rounded-lg bg-white shadow h-full transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300'>
 		<img
 			src={image}
 			class='aspect-video w-full object-cover'
