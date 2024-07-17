@@ -1,7 +1,7 @@
 ---
-import { Image } from 'astro:assets'
-
 const { program } = Astro.props
+
+const optimizeUrl = (url) => url.replace('/upload/', '/upload/q_auto/f_auto/w_400/')
 ---
 
 <div class='mx-auto pb-8 w-full max-w-7xl'>
@@ -60,13 +60,10 @@ const { program } = Astro.props
 
 									{event.image && (
 										<div class='relative my-6 shrink w-full'>
-											<a href={''}>
-												<Image
-													src={event.image}
+											<a href={event.image}>
+												<img
+													src={optimizeUrl(event.image)}
 													class='rounded shadow-lg mx-auto'
-													widths={[400, 900]}
-													width={400}
-													sizes='(max-width: 900px) 400px, 900px'
 													alt={event.title}
 													loading='lazy'
 													decoding='async'
