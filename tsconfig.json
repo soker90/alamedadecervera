@@ -9,7 +9,8 @@
 			"@assets/*": ["src/assets/*"],
 			"@components/*": ["src/components/*"],
 			"@constants/*": ["src/constants/*"],
-			"@layouts/*": ["src/layouts/*"]
+			"@layouts/*": ["src/layouts/*"],
+			"@utils": ["src/utils"]
 		},
 		"strictNullChecks": true
 	}
