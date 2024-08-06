@@ -21,6 +21,7 @@ const { images } = Astro.props
 						alt='gallery'
 						class='w-full h-full object-cover'
 						src={optimizeUrl(image.src, { w: 600 })}
+						loading='lazy'
 					/>
 				</a>
 				<figcaption class='text-center mt-2 font-medium md:h-20'>
