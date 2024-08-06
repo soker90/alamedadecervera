@@ -1,0 +1,34 @@
+---
+import { optimizeUrl } from '@utils'
+
+export interface Props {
+	images: {
+		src: string
+		title: string
+		subtitle?: string
+	}[]
+}
+
+const { images } = Astro.props
+---
+
+<div class='flex items-center flex-wrap'>
+	{
+		images.map((image) => (
+			<figure class='md:w-1/2 lg:w-1/3 p-2'>
+				<a href={image.src}>
+					<img
+						alt='gallery'
+						class='w-full h-full object-cover'
+						src={optimizeUrl(image.src, { w: 600 })}
+					/>
+				</a>
+				<figcaption class='text-center mt-2 font-medium md:h-20'>
+					<span class='font-bold'>{image.title}</span>
+					<br />
+					{image.subtitle}
+				</figcaption>
+			</figure>
+		))
+	}
+</div>
