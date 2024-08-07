@@ -1,0 +1,19 @@
+---
+export interface Props {
+	src: string
+	alt: string
+	class?: string
+	width?: number
+	loading?: 'lazy'
+}
+
+const { src, width, ...rest } = Astro.props
+
+let url = src?.replace('/upload/', '/upload/q_auto/f_auto/')
+
+if (width) {
+	url = url?.replace('/upload/', `/upload/w_${width}/`)
+}
+---
+
+<img src={url} loading='lazy' {...rest} />

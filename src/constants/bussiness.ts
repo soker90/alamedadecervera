@@ -3,7 +3,8 @@ export const BUSINESS = [
 		places: [
 			{
 				title: 'Cooperativa San Lorenzo',
-				image: '/images/business/cooperativa.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240236/images/business/9cf5dc035975e44c71fe687302ce3f9c.webp',
 				maps: ['https://goo.gl/maps/RG9pYFMjMQU69E2n7'],
 				web: 'https://www.coopsanlorenzo.es',
 				tel: ['926 58 20 42', '926 58 20 48'],

@@ -4,7 +4,8 @@ export const PLACES = [
 		places: [
 			{
 				title: 'Puente del Gran Prior',
-				image: '/images/puente.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240241/images/b9b41299ca4028e20f71dc95c73732a1.webp',
 				maps: ['https://goo.gl/maps/o7t4ZY5oV1JrhXHo9'],
 				body:
 					'Fue mandado construir por Juan de Villanueva sobre un antiguo canal a finales de 1797 y concluye a finales de 1799.\n' +
@@ -14,7 +15,8 @@ export const PLACES = [
 			},
 			{
 				title: 'Parróquia de San Lorenzo',
-				image: '/images/ermita-san-lorenzo.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240240/images/6cc9af9459cdf9bb40a251b74ceafd14.webp',
 				maps: ['https://goo.gl/maps/tHyw4TR6AnPhPce16'],
 				body:
 					'Lugar de culto cercano al puente del Gran Prior, esta iglesia recibe su nombre del patrón de la localidad, San Lorenzo. ' +
@@ -23,7 +25,8 @@ export const PLACES = [
 			},
 			{
 				title: 'Puente del Vado Lancero (Puente del Balancero)',
-				image: '/images/puente-vado-lancero.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240239/images/7d8446f63938081363961b2a059f8fcb.webp',
 				imageComment: 'Imagen de Ruidera treasures',
 				sourceImage: 'https://ruideratreasures.es/puentes-de-alameda-de-cervera/',
 				maps: ['https://goo.gl/maps/V3djyGQDaGuzckzV7'],
@@ -35,7 +38,8 @@ export const PLACES = [
 			},
 			{
 				title: 'Castillo de Cervera (Casa grande)',
-				image: '/images/casa-grande.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240239/images/66334cf5db0eed104b72175d33d743b3.webp',
 				maps: ['https://goo.gl/maps/t1iNuAtthwRDSQ1v6'],
 				body:
 					'Esta casa manchega de labranza consta de un patio delantero principal, donde está situado un palomar al estilo ' +
@@ -44,17 +48,20 @@ export const PLACES = [
 					'personas que trabajan en la finca, en la parte de abajo también hay un patio trasero o corral, donde estaban las ' +
 					'cuadras de los animales y los porches donde guardaban los carros.'
 			},
-			// {
-			// 	title: 'Estación de Marañon',
-			// 	image: '/images/maranon.webp',
-			// 	maps: [ 'https://goo.gl/maps/xyFF95EtQHJwX3vs7'],
-			// 	body: 'Actualmente cerrada, se sitúa a 8,3 km entre las estaciones de Alcázar de San Juan y Cinco Casas. La ' +
-			// 		'estación se abrió al tráfico el 15 de Junio de 1860, en 1941 la instalación pasó a manos de Renfe, y 1960 ' +
-			// 		'llegó la electrificación a la estación. Desde 2005 Adif es titular de las instalaciones.'
-			// },
+			{
+				title: 'Estación de Marañon',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240241/images/87df245163fef3891a71f3bc0623acd8.webp',
+				maps: ['https://goo.gl/maps/xyFF95EtQHJwX3vs7'],
+				body:
+					'Actualmente cerrada, se sitúa a 8,3 km entre las estaciones de Alcázar de San Juan y Cinco Casas. La ' +
+					'estación se abrió al tráfico el 15 de Junio de 1860, en 1941 la instalación pasó a manos de Renfe, y 1960 ' +
+					'llegó la electrificación a la estación. Desde 2005 Adif es titular de las instalaciones.'
+			},
 			{
 				title: 'Bombos manchegos',
-				image: '/images/bombo.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240238/images/19018561c99ad5e7916b49d438800e5c.webp',
 				maps: [
 					'https://goo.gl/maps/tdUNFWYxPF1MVXZk7',
 					'https://goo.gl/maps/hsnc56RKPqBXoAcR7',
@@ -74,7 +81,8 @@ export const PLACES = [
 		places: [
 			{
 				title: 'Piscina municipal',
-				image: '/images/piscina.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240238/images/13b1a6c8c40426b2739ce71cb71ede63.webp',
 				maps: ['https://goo.gl/maps/AMwLYt4Mai5eiGQH6'],
 				body:
 					'Abierta en verano. Dispone de una piscina grande y un bar en el que ofrece comidas. ' +
@@ -83,7 +91,8 @@ export const PLACES = [
 			},
 			{
 				title: 'Parque de D. Ramón Fernández Urrutia',
-				image: '/images/parque.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240239/images/706ddc913344040f4d71246aa8a38d69.webp',
 				maps: ['https://goo.gl/maps/TqhojU7CVaypS3jj8'],
 				web: null,
 				body:
@@ -105,7 +114,8 @@ export const PLACES = [
 		places: [
 			{
 				title: 'C.E.I.P. Juan de Villanueva (C.R.A. Alciares)',
-				image: '/images/colegio.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240235/images/d68c58f543aeb8d579b198a9bc3e316f.webp',
 				maps: ['https://goo.gl/maps/A3aZWG8oYDNvyTwH9'],
 				web: 'https://craalciares.blogspot.com',
 				body:
@@ -115,7 +125,8 @@ export const PLACES = [
 			},
 			{
 				title: 'Parada de autobuses',
-				image: '/images/parada-bus.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240240/images/e071fc2fabfdcbbb9ff88652ce3bfa89.webp',
 				maps: ['https://goo.gl/maps/vpz9ZPW6TDoZhtoh7'],
 				web: 'https://www.interbus.es',
 				body:
@@ -125,7 +136,8 @@ export const PLACES = [
 			},
 			{
 				title: 'Consultorio Médico Local',
-				image: '/images/consultorio.webp',
+				image:
+					'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240240/images/2dc794e9c283ad97cb5382d2890ca420.webp',
 				maps: ['https://goo.gl/maps/bRL1BRY6APQqwoj47'],
 				body: 'Centro médico de atención primaria.'
 			}
