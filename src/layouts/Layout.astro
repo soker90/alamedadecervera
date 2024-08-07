@@ -1,18 +1,18 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from 'astro:transitions'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 
 const {
 	title,
 	description = 'Web dedicada a la pedanía de Alameda de Cervera (Ciudad Real) y a sus habitantes. Aquí podrás encontrar información sobre el municipio, sus fiestas, su historia, sus tradiciones... ',
-	image = '/images/puente.webp'
+	image = 'https://res.cloudinary.com/daid7iwrd/image/upload/v1721240241/images/b9b41299ca4028e20f71dc95c73732a1.webp'
 } = Astro.props
 
-const seoTitle = title ? `${title} | Alameda de Cervera` : 'Alameda de Cervera';
+const seoTitle = title ? `${title} | Alameda de Cervera` : 'Alameda de Cervera'
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang='es'>
 	<head>
 		<meta charset='UTF-8' />
@@ -23,13 +23,13 @@ const seoTitle = title ? `${title} | Alameda de Cervera` : 'Alameda de Cervera';
 		<title>{seoTitle}</title>
 		<link rel='canonical' href={Astro.url.href} />
 		<link rel='sitemap' href='https://alamedadecervera.com/sitemap-index.xml' />
-		<link rel='alternate' type='application/rss+xml' href='https://alamedadecervera.com/rss.xml'>
+		<link rel='alternate' type='application/rss+xml' href='https://alamedadecervera.com/rss.xml' />
 		<meta name='description' content={description} />
 		<meta property='og:title' content={seoTitle} />
 		<meta property='og:description' content={description} />
 		<meta
 			property='og:image'
-			content={`https://alamedadecervera.com${image}`}
+			content={image.startsWith('http') ? image : `https://alamedadecervera.com${image}`}
 		/>
 		<meta property='og:url' content={Astro.url.href} />
 		<meta property='og:locale' content='es_ES' />
