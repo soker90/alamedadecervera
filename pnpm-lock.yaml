@@ -13,7 +13,7 @@ importers:
         version: 3.1.7(astro@4.15.1(rollup@4.20.0)(typescript@5.4.5))
       '@astrojs/preact':
         specifier: ^3.5.3
-        version: 3.5.3(@babel/core@7.25.2)(preact@10.23.1)(vite@5.4.2)
+        version: 3.5.3(@babel/core@7.25.2)(preact@10.24.3)(vite@5.4.2)
       '@astrojs/rss':
         specifier: ^4.0.9
         version: 4.0.9
@@ -28,7 +28,7 @@ importers:
         version: 7.8.1(astro@4.15.1(rollup@4.20.0)(typescript@5.4.5))
       '@preact/signals':
         specifier: ^1.3.0
-        version: 1.3.0(preact@10.23.1)
+        version: 1.3.0(preact@10.24.3)
       astro:
         specifier: ^4.15.1
         version: 4.15.1(rollup@4.20.0)(typescript@5.4.5)
@@ -39,8 +39,8 @@ importers:
         specifier: ^5.4.4
         version: 5.4.4
       preact:
-        specifier: ^10.23.1
-        version: 10.23.1
+        specifier: ^10.24.3
+        version: 10.24.3
       sanitize-html:
         specifier: ^2.13.0
         version: 2.13.0
@@ -2867,8 +2867,8 @@ packages:
     peerDependencies:
       preact: '>=10'
 
-  preact@10.23.1:
-    resolution: {integrity: sha512-O5UdRsNh4vdZaTieWe3XOgSpdMAmkIYBCT3VhQDlKrzyCm8lUYsk0fmVEvoQQifoOjFRTaHZO69ylrzTW2BH+A==}
+  preact@10.24.3:
+    resolution: {integrity: sha512-Z2dPnBnMUfyQfSQ+GBdsGa16hz35YmLmtTLhM169uW944hYL6xzTYkJjC07j+Wosz733pMWx0fgON3JNw1jJQA==}
 
   prebuild-install@7.1.2:
     resolution: {integrity: sha512-UnNke3IQb6sgarcZIDU3gbMeTp/9SSU1DAIkil7PrqG1vZlBtY5msYccSKSHDqa3hNg436IXK+SNImReuA1wEQ==}
@@ -3725,15 +3725,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/preact@3.5.3(@babel/core@7.25.2)(preact@10.23.1)(vite@5.4.2)':
+  '@astrojs/preact@3.5.3(@babel/core@7.25.2)(preact@10.24.3)(vite@5.4.2)':
     dependencies:
       '@babel/plugin-transform-react-jsx': 7.25.2(@babel/core@7.25.2)
       '@babel/plugin-transform-react-jsx-development': 7.24.7(@babel/core@7.25.2)
-      '@preact/preset-vite': 2.8.2(@babel/core@7.25.2)(preact@10.23.1)(vite@5.4.2)
-      '@preact/signals': 1.3.0(preact@10.23.1)
+      '@preact/preset-vite': 2.8.2(@babel/core@7.25.2)(preact@10.24.3)(vite@5.4.2)
+      '@preact/signals': 1.3.0(preact@10.24.3)
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.25.2)
-      preact: 10.23.1
-      preact-render-to-string: 6.5.11(preact@10.23.1)
+      preact: 10.24.3
+      preact-render-to-string: 6.5.11(preact@10.24.3)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -4225,12 +4225,12 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@preact/preset-vite@2.8.2(@babel/core@7.25.2)(preact@10.23.1)(vite@5.4.2)':
+  '@preact/preset-vite@2.8.2(@babel/core@7.25.2)(preact@10.24.3)(vite@5.4.2)':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/plugin-transform-react-jsx': 7.25.2(@babel/core@7.25.2)
       '@babel/plugin-transform-react-jsx-development': 7.24.7(@babel/core@7.25.2)
-      '@prefresh/vite': 2.4.6(preact@10.23.1)(vite@5.4.2)
+      '@prefresh/vite': 2.4.6(preact@10.24.3)(vite@5.4.2)
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.25.2)
       debug: 4.3.6
@@ -4247,27 +4247,27 @@ snapshots:
 
   '@preact/signals-core@1.8.0': {}
 
-  '@preact/signals@1.3.0(preact@10.23.1)':
+  '@preact/signals@1.3.0(preact@10.24.3)':
     dependencies:
       '@preact/signals-core': 1.8.0
-      preact: 10.23.1
+      preact: 10.24.3
 
   '@prefresh/babel-plugin@0.5.1': {}
 
-  '@prefresh/core@1.5.2(preact@10.23.1)':
+  '@prefresh/core@1.5.2(preact@10.24.3)':
     dependencies:
-      preact: 10.23.1
+      preact: 10.24.3
 
   '@prefresh/utils@1.2.0': {}
 
-  '@prefresh/vite@2.4.6(preact@10.23.1)(vite@5.4.2)':
+  '@prefresh/vite@2.4.6(preact@10.24.3)(vite@5.4.2)':
     dependencies:
       '@babel/core': 7.25.2
       '@prefresh/babel-plugin': 0.5.1
-      '@prefresh/core': 1.5.2(preact@10.23.1)
+      '@prefresh/core': 1.5.2(preact@10.24.3)
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
-      preact: 10.23.1
+      preact: 10.24.3
       vite: 5.4.2
     transitivePeerDependencies:
       - supports-color
@@ -7023,11 +7023,11 @@ snapshots:
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
-  preact-render-to-string@6.5.11(preact@10.23.1):
+  preact-render-to-string@6.5.11(preact@10.24.3):
     dependencies:
-      preact: 10.23.1
+      preact: 10.24.3
 
-  preact@10.23.1: {}
+  preact@10.24.3: {}
 
   prebuild-install@7.1.2:
     dependencies:
