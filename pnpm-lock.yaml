@@ -49,8 +49,8 @@ importers:
         version: 3.4.14
     devDependencies:
       '@argos-ci/cli':
-        specifier: ^2.4.1
-        version: 2.4.1
+        specifier: ^2.5.3
+        version: 2.5.3
       '@argos-ci/playwright':
         specifier: ^3.9.1
         version: 3.9.1
@@ -110,20 +110,20 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@argos-ci/api-client@0.4.0':
-    resolution: {integrity: sha512-csJMhcuvPS1vAO6NtfEJX8rZX7+hnm7GYQy24t9rhB9DESyegSS/KGCWoMtYGOmL+OSk9FJl0UkHdAD3tXmYdw==}
-    engines: {node: '>=18.0.0'}
-
   '@argos-ci/api-client@0.7.0':
     resolution: {integrity: sha512-oRCaqA4DZn+yxD78/dqPTcz7dJd5SIU+GwnlvqorGLw6bktQ3TMPmKND/jb/GOf8tUpOs9FrSrwxVwFjYfiVeg==}
+    engines: {node: '>=18.0.0'}
+
+  '@argos-ci/api-client@0.7.1':
+    resolution: {integrity: sha512-cJBNriNEs4aSBBpvsJH0f1D71rr9zxu/f0xRiqdEIIEN4ioFCCxs/66hNKrTxCw+lTaBnBL6LaM5vrBUkzgkzQ==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/browser@2.2.0':
     resolution: {integrity: sha512-EbzW1kzV/CZ1qtnKWMfoVckjZVhu2SEneBEZHgvOvPAM2Bvn4D5oO0hu6izFjot7IwzZBxXvbD/YKhfBtLiMCA==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/cli@2.4.1':
-    resolution: {integrity: sha512-vW31kqwqCwW3Vq+5sm24vScLeiM5VSYAsaxM27uDRX2DyaP/Zv+KxGBmX1+tbsaxOF+kbWulbDadXyKU/wVwiQ==}
+  '@argos-ci/cli@2.5.3':
+    resolution: {integrity: sha512-kXEn9xtNlELn8NMyycXaUxreVR9EmaM5as1ePREzP1eixEu9Shr13SKKEyqaLCUJ9mCRgJiPLC2TVZguRQty+A==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -131,20 +131,20 @@ packages:
     resolution: {integrity: sha512-mj+qt+SFYm5lM+TrDiDXEpLy5pTiznVSHktO+uhKBrAgpG3i2n3x21SITK+mERjpkxX40Tz5Dr7MYus6YWTLsQ==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/core@2.7.0':
-    resolution: {integrity: sha512-k7S5aIhE3o9S27qJ+imn+5P9J1PIPM5ltKw67Tvt+xxgCLLQUlt8YbVz1YMppWY795l1MUg/4SpybySFjXorGQ==}
+  '@argos-ci/core@2.12.0':
+    resolution: {integrity: sha512-SmJYi93Oh0DYnJ1kZVFtzM0UDr0MfrcUhOuUsBJNpYc4hV2AlCNeoi8hzWYPJvARMKh03ZcbNx4+VY5jXiGLOA==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/playwright@3.9.1':
     resolution: {integrity: sha512-69MX48a9jZpxuN9KcyQc81w4Cd6gUMbboragjI4N6ad837cEEeFhdA8w0KfTfogeKauRmSb7rv5mkPzmpUmpkg==}
     engines: {node: '>=18.16.0'}
 
-  '@argos-ci/util@2.1.1':
-    resolution: {integrity: sha512-UyACLQe9rvCPbo9muhrLte1AD75kQlcGBuecjmaotaF9MBMj+9Yz+TYs1jJrlLMgqowfIgbXjBYmkXRUn36tCg==}
-    engines: {node: '>=18.0.0'}
-
   '@argos-ci/util@2.2.0':
     resolution: {integrity: sha512-MLm8276zl/JkBiQKrkNUCdxQ+OcrGxffn3u61GOH7epaMd3PbxipUnD7JnptxBOt5rnXXqIObprCMl1ox7yAyw==}
+    engines: {node: '>=18.0.0'}
+
+  '@argos-ci/util@2.2.1':
+    resolution: {integrity: sha512-z2B3EYVhDCDYlQwg55C/P8Xvbupb+XjmRHggIYl1R3yiNEBqy/kT9X/uOVMHxFyhLsM2PXsOOruugJoT11dB7Q==}
     engines: {node: '>=18.0.0'}
 
   '@astrojs/compiler@2.10.3':
@@ -1202,10 +1202,6 @@ packages:
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
 
-  boxen@8.0.0:
-    resolution: {integrity: sha512-Mzw0gi6A0zH9bVVLSuoyaPFbae4gv3luQkkt3FmVgA1g/oeKpqxFII39OuV58AiwcN2FR+rwlZhJ2mfggjEWKw==}
-    engines: {node: '>=18'}
-
   boxen@8.0.1:
     resolution: {integrity: sha512-F3PH5k5juxom4xktynS7MoFY+NUWH5LC4CnH11YB8NPew+HLpmBLCybSAEyb2F+4pRXhuhWqFesoQd6DAyc2hw==}
     engines: {node: '>=18'}
@@ -1308,10 +1304,6 @@ packages:
   cli-boxes@3.0.0:
     resolution: {integrity: sha512-/lzGpEWL/8PfI0BmBOPRwp0c/wFNX1RdUML3jK/RcSBA9T8mZDdQpqYBKtCFTOfQbwPqWEOpjqW+Fnayc0969g==}
     engines: {node: '>=10'}
-
-  cli-boxes@4.0.0:
-    resolution: {integrity: sha512-RU4tOq6V6/HggQwAumv7c8O2tuvg0gElkQ5FEdWULl4itMhvgqy1kWXq5oy3FbKOF65Ml8J4lxWbHDZcKaWLQA==}
-    engines: {node: '>=18.20'}
 
   cli-cursor@5.0.0:
     resolution: {integrity: sha512-aCj4O5wKyszjMmDT4tZj93kxyydN/K5zPWSCe6/0AV/AA1pqe5ZBIw0a2ZfPQV7lL5/yb5HsUreJ6UFAF1tEQw==}
@@ -2083,10 +2075,6 @@ packages:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
 
-  import-lazy@4.0.0:
-    resolution: {integrity: sha512-rKtvo6a868b5Hu3heneU+L4yEQ4jYKLtjpnPeUdK7h0yzXGmyBTypknlkCvHFBqfX9YlorEiMM6Dnq/5atfHkw==}
-    engines: {node: '>=8'}
-
   import-meta-resolve@4.1.0:
     resolution: {integrity: sha512-I6fiaX09Xivtk+THaMfAwnA3MVA5Big1WHF1Dfx9hFuvNIWpXnorlkzhcQf6ehrqQiiZECRt1poOAkPmer3ruw==}
 
@@ -2752,14 +2740,11 @@ packages:
   oniguruma-to-js@0.4.3:
     resolution: {integrity: sha512-X0jWUcAlxORhOqqBREgPMgnshB7ZGYszBNspP+tS9hPD3l13CdaXcHbgImoHUHlrvGx/7AvFEkTRhAGYh+jzjQ==}
 
-  openapi-fetch@0.11.3:
-    resolution: {integrity: sha512-r18fERgpxFrI4pv79ABD1dqFetWz7pTfwRd7jQmRm/lFdCDpWF43kvHUiOqOZu+tWsMydDJMpJN1hlZ9inRvfA==}
-
   openapi-fetch@0.13.0:
     resolution: {integrity: sha512-6Nlf/BDbtyHwHdNrLPUiyt4CZMzL3ZyAt55yWH8W7+Z+8aYWnvca4uZHQHXViy8KcnCMqAhLM/bifh2Yjjkf6w==}
 
-  openapi-typescript-helpers@0.0.13:
-    resolution: {integrity: sha512-z44WK2e7ygW3aUtAtiurfEACohf/Qt9g6BsejmIYgEoY4REHeRzgFJmO3ium0libsuzPc145I+8lE9aiiZrQvQ==}
+  openapi-fetch@0.13.1:
+    resolution: {integrity: sha512-8P77k9Cmp0VNyry8ml293v1mqAyr4AkN7fE9VuUJ2mR0bK1NWihDM+Vj5/Try4aIYwYpT2OyCrYS3ObIRtO4LQ==}
 
   openapi-typescript-helpers@0.0.15:
     resolution: {integrity: sha512-opyTPaunsklCBpTK8JGef6mfPhLSnyy5a0IN9vKtx3+4aExf+KxEqYwIy3hqkedXIB97u357uLMJsOnm3GVjsw==}
@@ -3158,10 +3143,6 @@ packages:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
     engines: {node: '>=4'}
 
-  semver-diff@4.0.0:
-    resolution: {integrity: sha512-0Ju4+6A8iOnpL/Thra7dZsSlOHYAHIeMxfhWQRI1/VLcT3WDBZKKtQt/QkBOsiIN9ZpuvHE6cGZ0x4glCMmfiA==}
-    engines: {node: '>=12'}
-
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
@@ -3503,8 +3484,8 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  update-notifier@7.2.0:
-    resolution: {integrity: sha512-GoBCFKIbF88latQyk8HpHUoJHqZUzYSPI6BySAjs5TWd/TCTMynAsIfGfJ6Ep2DAx6O5YExYGPs3Hdnt2TWdzQ==}
+  update-notifier@7.3.1:
+    resolution: {integrity: sha512-+dwUY4L35XFYEzE+OAL3sarJdUioVovq+8f7lcIJ7wnmnYQV5UD1Y/lcwaMSyaQ6Bj3JMj1XSTjZbNLHn/19yA==}
     engines: {node: '>=18'}
 
   uri-js@4.4.1:
@@ -3690,10 +3671,6 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@argos-ci/api-client@0.4.0':
-    dependencies:
-      openapi-fetch: 0.11.3
-
   '@argos-ci/api-client@0.7.0':
     dependencies:
       debug: 4.3.7
@@ -3701,14 +3678,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@argos-ci/api-client@0.7.1':
+    dependencies:
+      debug: 4.3.7
+      openapi-fetch: 0.13.1
+    transitivePeerDependencies:
+      - supports-color
+
   '@argos-ci/browser@2.2.0': {}
 
-  '@argos-ci/cli@2.4.1':
+  '@argos-ci/cli@2.5.3':
     dependencies:
-      '@argos-ci/core': 2.7.0
+      '@argos-ci/core': 2.12.0
       commander: 12.1.0
       ora: 8.1.0
-      update-notifier: 7.2.0
+      update-notifier: 7.3.1
     transitivePeerDependencies:
       - supports-color
 
@@ -3725,13 +3709,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@argos-ci/core@2.7.0':
+  '@argos-ci/core@2.12.0':
     dependencies:
-      '@argos-ci/api-client': 0.4.0
-      '@argos-ci/util': 2.1.1
-      axios: 1.7.7(debug@4.3.6)
+      '@argos-ci/api-client': 0.7.1
+      '@argos-ci/util': 2.2.1
+      axios: 1.7.7(debug@4.3.7)
       convict: 6.2.4
-      debug: 4.3.6
+      debug: 4.3.7
       fast-glob: 3.3.2
       sharp: 0.33.5
       tmp: 0.2.3
@@ -3748,9 +3732,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@argos-ci/util@2.1.1': {}
-
   '@argos-ci/util@2.2.0': {}
+
+  '@argos-ci/util@2.2.1': {}
 
   '@astrojs/compiler@2.10.3': {}
 
@@ -5013,14 +4997,6 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.0.0
 
-  axios@1.7.7(debug@4.3.6):
-    dependencies:
-      follow-redirects: 1.15.6(debug@4.3.6)
-      form-data: 4.0.0
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-
   axios@1.7.7(debug@4.3.7):
     dependencies:
       follow-redirects: 1.15.6(debug@4.3.7)
@@ -5048,17 +5024,6 @@ snapshots:
       file-uri-to-path: 1.0.0
 
   boolbase@1.0.0: {}
-
-  boxen@8.0.0:
-    dependencies:
-      ansi-align: 3.0.1
-      camelcase: 8.0.0
-      chalk: 5.3.0
-      cli-boxes: 4.0.0
-      string-width: 7.2.0
-      type-fest: 4.23.0
-      widest-line: 5.0.0
-      wrap-ansi: 9.0.0
 
   boxen@8.0.1:
     dependencies:
@@ -5185,8 +5150,6 @@ snapshots:
   ci-info@4.0.0: {}
 
   cli-boxes@3.0.0: {}
-
-  cli-boxes@4.0.0: {}
 
   cli-cursor@5.0.0:
     dependencies:
@@ -5807,10 +5770,6 @@ snapshots:
 
   flattie@1.1.1: {}
 
-  follow-redirects@1.15.6(debug@4.3.6):
-    optionalDependencies:
-      debug: 4.3.6
-
   follow-redirects@1.15.6(debug@4.3.7):
     optionalDependencies:
       debug: 4.3.7
@@ -6174,8 +6133,6 @@ snapshots:
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
-
-  import-lazy@4.0.0: {}
 
   import-meta-resolve@4.1.0: {}
 
@@ -7045,15 +7002,13 @@ snapshots:
     dependencies:
       regex: 4.4.0
 
-  openapi-fetch@0.11.3:
-    dependencies:
-      openapi-typescript-helpers: 0.0.13
-
   openapi-fetch@0.13.0:
     dependencies:
       openapi-typescript-helpers: 0.0.15
 
-  openapi-typescript-helpers@0.0.13: {}
+  openapi-fetch@0.13.1:
+    dependencies:
+      openapi-typescript-helpers: 0.0.15
 
   openapi-typescript-helpers@0.0.15: {}
 
@@ -7547,10 +7502,6 @@ snapshots:
       extend-shallow: 2.0.1
       kind-of: 6.0.3
 
-  semver-diff@4.0.0:
-    dependencies:
-      semver: 7.6.3
-
   semver@6.3.1: {}
 
   semver@7.6.3: {}
@@ -7968,19 +7919,17 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  update-notifier@7.2.0:
+  update-notifier@7.3.1:
     dependencies:
-      boxen: 8.0.0
+      boxen: 8.0.1
       chalk: 5.3.0
       configstore: 7.0.0
-      import-lazy: 4.0.0
       is-in-ci: 1.0.0
       is-installed-globally: 1.0.0
       is-npm: 6.0.0
       latest-version: 9.0.0
       pupa: 3.1.0
       semver: 7.6.3
-      semver-diff: 4.0.0
       xdg-basedir: 5.1.0
 
   uri-js@4.4.1:
