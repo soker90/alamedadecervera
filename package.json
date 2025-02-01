@@ -42,7 +42,7 @@
 	},
 	"devDependencies": {
 		"@argos-ci/cli": "^2.5.3",
-		"@argos-ci/playwright": "^3.9.1",
+		"@argos-ci/playwright": "^4.1.0",
 		"@playwright/test": "^1.45.3",
 		"@types/photoswipe": "^4.1.6",
 		"@typescript-eslint/eslint-plugin": "^7.18.0",
