@@ -45,6 +45,7 @@
 		"@argos-ci/playwright": "^5.0.6",
 		"@eslint/js": "^9.31.0",
 		"@playwright/test": "^1.54.1",
+		"@tailwindcss/postcss": "^4.1.11",
 		"@types/photoswipe": "^4.1.6",
 		"@typescript-eslint/eslint-plugin": "^8.37.0",
 		"@typescript-eslint/parser": "^8.37.0",
