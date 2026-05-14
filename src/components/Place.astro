@@ -14,7 +14,7 @@ const { image, title, web, body, maps, imageComment, sourceImage, tel } = place;
 		<figure class='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0'>
 			<ImageRemote
 				class='object-cover object-center rounded'
-				alt=''
+				alt={title}
 				src={image}
 				loading='lazy'
 			/>
@@ -42,7 +42,7 @@ const { image, title, web, body, maps, imageComment, sourceImage, tel } = place;
 					maps.map((map) => (
 						<a
 							aria-label='Google Maps'
-							class='inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-8'
+							class='inline-flex text-white bg-indigo-500 border-0 py-2 px-6 hover:bg-indigo-600 rounded text-lg mt-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-800'
 							target='_blank'
 							rel='noopener noreferrer'
 							href={map}
@@ -56,8 +56,8 @@ const { image, title, web, body, maps, imageComment, sourceImage, tel } = place;
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
-							class='inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg mt-8'
-							href={web}
+						class='inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 hover:bg-gray-200 rounded text-lg mt-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-500'
+						href={web}
 						>
 							Web
 						</a>
@@ -68,8 +68,8 @@ const { image, title, web, body, maps, imageComment, sourceImage, tel } = place;
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
-							class='inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg mt-8'
-							href={`tel:+34${num.replace(/\s+/g, '')}`}
+						class='inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 hover:bg-gray-200 rounded text-lg mt-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-500'
+						href={`tel:+34${num.replace(/\s+/g, '')}`}
 						>
 							{num}
 						</a>

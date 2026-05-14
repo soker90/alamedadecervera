@@ -10,13 +10,21 @@ const NavMenu = () => {
 
 	return (
 		<>
-			<button class='p-2 lg:hidden z-20' onClick={toggleMenu} aria-label='Toggle menu'>
+			<button
+				class='p-2 lg:hidden z-20'
+				onClick={toggleMenu}
+				aria-label={showMenu ? 'Cerrar menú' : 'Abrir menú'}
+				aria-expanded={showMenu}
+				aria-controls='mobile-nav'
+			>
 				{showMenu ? (
 					<svg
 						className='h-6 w-6 text-gray-900'
 						viewBox='0 0 24 24'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
+						aria-hidden='true'
+						focusable='false'
 					>
 						<path
 							d='M6 18L18 6M6 6L18 18'
@@ -33,6 +41,8 @@ const NavMenu = () => {
 						fill='none'
 						viewBox='0 0 24 24'
 						stroke='currentColor'
+						aria-hidden='true'
+						focusable='false'
 					>
 						<path
 							stroke-linecap='round'
@@ -44,9 +54,11 @@ const NavMenu = () => {
 				)}
 			</button>
 			<nav
-				className={`fixed bg-gray-50 top-0 left-0 w-full h-full overflow-auto z-10 ${
+				id='mobile-nav'
+				className={`fixed bg-gray-50 top-0 left-0 w-full h-full overflow-auto z-10 transition-opacity duration-200 ${
 					showMenu ? 'opacity-100' : 'opacity-0 pointer-events-none'
 				}`}
+				aria-hidden={!showMenu}
 				onClick={toggleMenu}
 			>
 				<div className='container mx-auto px-4 py-32 lg:px-0'>
