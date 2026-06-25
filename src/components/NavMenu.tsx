@@ -65,6 +65,7 @@ const NavMenu = () => {
 					<div className='flex flex-col items-center justify-center h-full'>
 						{MENU.map(({ title, href }) => (
 							<a
+								key={href}
 								className={'my-4 font-bold text-2xl text-gray-700 hover:text-gray-900'}
 								href={href}
 							>

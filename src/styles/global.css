@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-primary: #094293;
+	--color-secondary: #4c6da6;
+
+	--color-indigo-50: #ddebfd;
+	--color-indigo-100: #bcd6fb;
+	--color-indigo-200: #78adf7;
+	--color-indigo-300: #3584f3;
+	--color-indigo-400: #0d60d3;
+	--color-indigo-500: #094293;
+	--color-indigo-600: #073473;
+	--color-indigo-700: #052757;
+	--color-indigo-800: #041a3a;
+	--color-indigo-900: #020d1d;
+	--color-indigo-950: #01070e;
+}
