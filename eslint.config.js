@@ -10,7 +10,7 @@ const unusedVars = {
 
 export default [
 	{
-		ignores: ['dist/', '.vercel/', '.astro/', 'node_modules/']
+		ignores: ['dist/', '.vercel/', '.astro/', 'node_modules/', 'skills/', '.agents/']
 	},
 	// StandardJS rules (flat-config successor of eslint-config-standard) with
 	// TypeScript support. Styling rules are disabled because Prettier owns formatting.
