@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 import rss from '@astrojs/rss'
 import { getCollection } from 'astro:content'
 import sanitizeHtml from 'sanitize-html'
@@ -17,7 +16,7 @@ export const GET = async (context) => {
 			blog?.map((post) => ({
 				title: post.data.title,
 				description: post.data.description,
-				link: `/actualidad/${post.slug}/`,
+				link: `/actualidad/${post.id}/`,
 				pubDate: post.data.pubDate,
 				content: sanitizeHtml(parser.render(post.body))
 			})) || [],
