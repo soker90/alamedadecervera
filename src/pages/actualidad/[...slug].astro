@@ -19,7 +19,7 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title} image={post.data.image} description={post.data.description}>
-	<main id="main-content" class="container body-font mt-10 md:mt-20 m-auto w-5/6 lg:w-3/5 mb-24">
+	<main id='main-content' class='container body-font mt-10 md:mt-20 m-auto w-5/6 lg:w-3/5 mb-24'>
 		<img src={post.data.image} alt={post.data.title} class='w-full h-96 object-cover object-center rounded-lg mb-8' />
 		<span class='text-indigo-700 font-medium italic'><time>{post.data.date}</time></span>
 		<h1 class='sm:text-3xl text-2xl font-semibold title-font text-gray-900 mb-10 mt-4 md:mt-0 text-center'>{post.data.title}</h1>
