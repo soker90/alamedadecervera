@@ -24,5 +24,7 @@ pnpm-debug.log*
 # editor files
 .idea
 
+# testing
 screenshots/
-```
+test-results/
+playwright-report/

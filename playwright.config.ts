@@ -3,8 +3,9 @@ import type { PlaywrightTestConfig } from '@playwright/test'
 
 const config: PlaywrightTestConfig = {
 	webServer: {
-		port: 4321,
-		command: 'npm run dev'
+		command: 'pnpm preview',
+		url: 'http://localhost:4321',
+		reuseExistingServer: !process.env.CI
 	},
 	workers: process.env.CI ? 5 : undefined,
 	projects: [
