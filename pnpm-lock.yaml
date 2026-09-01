@@ -49,8 +49,8 @@ importers:
         version: 4.3.3
     devDependencies:
       '@argos-ci/cli':
-        specifier: ^6.9.0
-        version: 6.9.0(@types/node@24.13.3)
+        specifier: ^6.9.1
+        version: 6.9.1(@types/node@24.13.3)
       '@argos-ci/playwright':
         specifier: ^7.4.6
         version: 7.4.6(@types/node@24.13.3)
@@ -95,13 +95,17 @@ packages:
     resolution: {integrity: sha512-8qWtsOXG752VTAI6iPeHZyMKLSqN9jqdAqZZMk0Q4+j5WSPX76K5a3feV8nBlSqpr1O4RP2/GWYVoxkGdzJr3w==}
     engines: {node: '>=22.0.0'}
 
-  '@argos-ci/cli@6.9.0':
-    resolution: {integrity: sha512-zAVXgOnFmDU36n6fOr6GMI/wnCCqbZ1XMD8vmLGpBOjzeMKbK2dthzbHKcq02015NFmYMz5U9JZbyG5xGJRGXw==}
+  '@argos-ci/cli@6.9.1':
+    resolution: {integrity: sha512-6btvfAr6vYJBYaXQSUoHumS4reXVoVjVdrPx6C5bRgzNXDK+W7l1Eugn8SvAaogXEE/fUNmIxd/KXBcxr8sT/w==}
     engines: {node: '>=22.0.0'}
     hasBin: true
 
   '@argos-ci/core@6.8.1':
     resolution: {integrity: sha512-SY5dU/Rtxux0Biy0gd4zY36fClz3xekrgdaBCZv0+Pnvbuy9STNPaV8JjWfA5fu+vEORCOghcYvQwqwhRWbOSQ==}
+    engines: {node: '>=22.0.0'}
+
+  '@argos-ci/core@6.8.2':
+    resolution: {integrity: sha512-EX0m1QsXqRk0+FyJlw0YBfjIbbSCaxAqvGxYrHH0NoBjUouLsMODnjO8jAbkCPZRPIqVu390vOLyK/W+USkNWA==}
     engines: {node: '>=22.0.0'}
 
   '@argos-ci/playwright@7.4.6':
@@ -4136,10 +4140,10 @@ snapshots:
 
   '@argos-ci/browser@6.4.5': {}
 
-  '@argos-ci/cli@6.9.0(@types/node@24.13.3)':
+  '@argos-ci/cli@6.9.1(@types/node@24.13.3)':
     dependencies:
       '@argos-ci/api-client': 0.31.0
-      '@argos-ci/core': 6.8.1(@types/node@24.13.3)
+      '@argos-ci/core': 6.8.2(@types/node@24.13.3)
       '@vercel/detect-agent': 1.2.5
       commander: 15.0.0
       open: 11.0.1
@@ -4158,6 +4162,21 @@ snapshots:
       mime-types: 3.0.2
       p-retry: 8.0.0
       sharp: 0.35.3(@types/node@24.13.3)
+      tmp: 0.2.7
+    transitivePeerDependencies:
+      - '@types/node'
+      - supports-color
+
+  '@argos-ci/core@6.8.2(@types/node@24.13.3)':
+    dependencies:
+      '@argos-ci/api-client': 0.31.0
+      '@argos-ci/util': 4.1.0
+      convict: 6.2.5
+      debug: 4.4.3
+      fast-glob: 3.3.3
+      mime-types: 3.0.2
+      p-retry: 8.0.0
+      sharp: 0.35.4(@types/node@24.13.3)
       tmp: 0.2.7
     transitivePeerDependencies:
       - '@types/node'
@@ -8322,7 +8341,6 @@ snapshots:
       '@img/sharp-win32-ia32': 0.35.4
       '@img/sharp-win32-x64': 0.35.4
       '@types/node': 24.13.3
-    optional: true
 
   shebang-command@2.0.0:
     dependencies:
